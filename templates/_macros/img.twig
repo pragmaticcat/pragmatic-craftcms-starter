@@ -1,0 +1,148 @@
+{# #
+ # Responsive <img>
+ # An image with srcset widths at standard breakpoints.
+ # Also includes some basic defaults and lazyloading support.
+ #
+ # Usage:
+ # {{ img.responsive(asset, {
+ #   clas : 'hover:scale-105',
+ #   lazyload : true,
+ #   maxW: 1920,
+ #   ratio : 16 / 9,
+ #   sizes : '(min-width: 1280) 60vw, 100vw'
+ # }) }}
+ #
+ # Will output something like:
+ #   <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%221920%22%20height%3D%221080%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+ #        srcset="https://craftcms.ddev.site/volumes/uploads/_1920x1080_crop_center-center_none/image.jpg 1920w,
+ #                https://craftcms.ddev.site/volumes/uploads/_1600x900_crop_center-center_none/image.jpg 1600w,
+ #                https://craftcms.ddev.site/volumes/uploads/_1366x768_crop_center-center_none/image.jpg 1366w,
+ #                https://craftcms.ddev.site/volumes/uploads/_1024x576_crop_center-center_none/image.jpg 1024w,
+ #                https://craftcms.ddev.site/volumes/uploads/_768x432_crop_center-center_none/image.jpg 768w,
+ #                https://craftcms.ddev.site/volumes/uploads/_640x360_crop_center-center_none/image.jpg 640w,
+ #                https://craftcms.ddev.site/volumes/uploads/_425x239_crop_center-center_none/image.jpg 425w"
+ #        class="hover:scale-105"
+ #        width="1920"
+ #        height="1080"
+ #        alt="Value of asset.alt"
+ #        loading="lazy"
+ #        sizes="(min-width: 1280) 60vw, 100vw">
+ #
+ # @parm string|craft\elements\Asset image - An asset image or image URL string
+ # @param array opts - Hash of options:
+ #   @var string class - Any CSS classes to add to img tag
+ #   @var bool lazyload - Whether the image should lazyload (default true)
+ #   @var null|number maxW - The max width the image should ever display at (default 1920)
+ #   @var number ratio - Set to zero to not crop (default 0)
+ #   @var string sizes - String of responsive sizes (default 100vw)
+ #   @var array widths - Array of width transforms (default [ 1920, 1600, 1366, 1024, 768, 640, 425 ])
+ # #}
+{% macro responsive(image, opts = {}) %}
+
+  {% from "_macros/svg.twig" import transparentDataUri %}
+
+  {# merge opts with defaults #}
+  {% set opts = {
+    class: '',
+    lazyload : true,
+    maxW : 1920,
+    ratio : 0,
+    sizes : '100vw',
+    widths : [ 1920, 1600, 1366, 1024, 768, 640, 425 ]
+  }|merge(opts) %}
+
+  {# if image is an asset, then we can transform it #}
+  {% if image is instance of('craft\\elements\\Asset') %}
+
+    {# Generate an array of widths, from big to small, that do not exceed max width #}
+    {% set widths = [opts.maxW]|merge(opts.widths|sort|filter(w => opts.maxW > w)) %}
+
+    {# Generate hash of transforms based on widths & opts.ratio #}
+    {% set transforms = widths|map(w => {
+      width : w,
+      height : opts.ratio > 0 ? (w / opts.ratio)|round(2) : null
+    }) %}
+
+    {# Generate a placeholder in case we are lazyloading #}
+    {% set placeholder = transparentDataUri(
+      opts.maxW,
+      opts.ratio > 0 ? (opts.maxW / opts.ratio)|round(2) : null
+      ) %}
+
+    {# Define img tag attributes to merge into default #}
+    {% set assetAttrs = {
+      alt:     image.alt|default(''),
+      src:     opts.lazyload ? placeholder : image.url(transforms|last),
+      srcset:  transforms|map(t => image.url(t) ~ ' ' ~ image.width(t) ~ 'w')|join(','),
+      sizes:   opts.sizes,
+      width:   image.width(transforms|last),
+      height:  image.height(transforms|last),
+    } %}
+  {% endif %}
+
+  {# #
+   # BEGIN OUTPUT OF IMG TAG
+   # The hash of options we pass:
+   #   - starts assuming `image` is just a string
+   #   - merged with `assetAttrs` if defined above, when `image` is an Asset
+   # #}
+  {{ tag('img', {
+    alt:     '',
+    class:   opts.class,
+    src:     image,
+    width:   opts.maxW,
+    height:  opts.ratio > 0 ? (opts.maxW / opts.ratio)|round(2) : null,
+    loading: opts.lazyload ? 'lazy' : 'eager',
+  }|merge(assetAttrs ?? {})) }}
+{% endmacro %}
+
+{# #
+ # Dummy <img>
+ # A dummy image courtesy of https://placehold.co/
+ # Piggybacks off of responsive macro.
+ #
+ # Usage:
+ #   {{ img.dummy(400, 300) }}
+ #
+ # Outputs:
+ #   <img src="https://placehold.co/400x300"
+ #        alt=""
+ #        width="400"
+ #        height="300"
+ #        loading="lazy">
+ #
+ # @param number width - The width of the image (default 600)
+ # @param number height - The height of the image (default 400)
+ # @param bool lazyload - Whether to lazyload (default true)
+ # #}
+{% macro dummy(w = 600, h = 400, opts = {}) %}
+  {{ _self.responsive('https://placehold.co/' ~ w ~ 'x' ~ h, opts|merge({
+    maxW : w,
+    ratio : w / h
+  })) }}
+{% endmacro %}
+
+{# #
+ # Responsive "cover" image
+ # Automatically adds necessary tailwind classes and inline style
+ # attributes to facilitate object-cover behavior.
+ # Assumes to be used inside a container that constrains itself to a
+ # specific width and height.
+
+ # Usage:
+ #   <div class="aspect-w-16 aspect-h-9">
+ #     {{ img.cover(asset, {
+ #       maxW : 1024,
+ #       sizes: "(min-width: 768) 30vw, 100vw)"
+ #     }) }}
+ #   </div>
+ #
+ # @parm craft\elements\Asset image - An asset image
+ # @param array opts - Hash of options, see responsive macro
+ # #}
+{% macro cover(image, opts = {}) %}
+  {{ _self.responsive(image, opts)|attr({
+    class : 'object-cover w-full h-full',
+    style : 'object-position: ' ~ image.getFocalPoint(true)
+  }) }}
+{% endmacro %}

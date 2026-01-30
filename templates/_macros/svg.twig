@@ -1,0 +1,64 @@
+{##
+ # Outputs an SVG by filename
+ # Assumes SVG has been saved in `src/public/svg` and then
+ # copied to `web/dist/svg` via Vite.
+ #
+ # Usage:
+ #   {{ use('search') }}
+ #   {{ use('arrow', 'fill-current') }}
+ #   {{ use('icon', 'w-20 h-20', { 'aria-hidden' : 'true' }) }}
+ #
+ # @param string key       - The filename of the SVG, minus extension
+ # @param string classList - Any classes to add to SVG, defaults to none
+ # @param array  classList - Any additional attributes to add to SVG, defaults to empty hash
+ ##}
+{% macro use(key, classList = '', attrs = {}) %}
+    {% apply spaceless %}
+        {% set attrs = attrs|default({}) %}
+        {% set markup %}
+            {{ svg('@webroot/dist/svg/' ~ key ~ '.svg')|attr({ class: classList }) }}
+        {% endset %}
+        {{ markup|attr(attrs) }}
+    {% endapply %}
+{% endmacro %}
+
+{##
+ # Transparent SVG
+ # Returns a transparent svg tag
+ #
+ # Usage:
+ #   {{ transparent(16, 9) }}
+ #
+ # @param number w - The width of the SVG, default to 1
+ # @param number h - The height of the SVG, default to 1
+ ##}
+{% macro transparent(w = 1, h = 1) %}
+  {{ tag('svg', {
+    xmlns: 'http://www.w3.org/2000/svg',
+    width: w,
+    height: h
+  }) }}
+{% endmacro %}
+
+{##
+ # Transparent SVG as Data URI string
+ # Returns a transparent svg as a string for use in `<img src="">`
+ #
+ # See also: https://codepen.io/tigt/post/optimizing-svgs-in-data-uris
+ # Credit: https://github.com/nystudio107/craft-imageoptimize/blob/5f2e6e3fc2d4ea95ebd2ecdd25a360c22d5c2d52/src/services/OptimizedImages.php#L410-L441
+ #
+ # Usage:
+ #   {{ transparentDataUri(16, 9) }}
+ #
+ # @param number w - The width of the SVG, default to 1
+ # @param number h - The height of the SVG, default to 1
+ ##}
+{% macro transparentDataUri(w = 1, h = 1) %}
+  {{- 'data:image/svg+xml,' ~ _self.transparent(w, h)|trim|url_encode|replace({
+    "%20" : " ",
+    "%3D" : "=",
+    "%3A" : ":",
+    "%2F" : "/",
+    "%3E%3C/svg%3E" : " /%3E",
+  }) -}}
+{% endmacro %}

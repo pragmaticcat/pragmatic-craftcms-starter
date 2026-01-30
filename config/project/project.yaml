@@ -1,0 +1,63 @@
+dateModified: 1769776633
+email:
+  fromEmail: oriolnoya@gmail.com
+  fromName: 'Oriol Craft Starter'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1a5b9fdc-1c32-4e52-a8c6-324ce30e35e1: Català # Català
+    38d0a421-6127-4344-aca0-1ff65c8b8594: Simple # Simple
+    b5f0b813-586b-4599-b8ce-e8ef1b0eb355: Español # Español
+    de3b4f14-0161-4bc8-b49f-7e7c334472e3: 'Oriol Craft Starter' # Oriol Craft Starter
+    e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: 024C0Z101VKC9VVO9GS8W64N
+    schemaVersion: 1.0.0
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.13
+  site-switcher:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.0
+  translations-admin:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Oriol Craft Starter'
+  schemaVersion: 5.9.0.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

@@ -1,0 +1,9 @@
+baseUrl: $ESPANOL_SITE_URL
+enabled: '1'
+handle: espanol
+hasUrls: true
+language: es
+name: Español
+primary: false
+siteGroup: de3b4f14-0161-4bc8-b49f-7e7c334472e3 # Oriol Craft Starter
+sortOrder: 2
