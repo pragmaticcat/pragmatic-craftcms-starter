@@ -1,4 +1,4 @@
-dateModified: 1769776633
+dateModified: 1769777252
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Oriol Craft Starter'
@@ -15,26 +15,18 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
-  cp-field-inspect:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  hyper:
-    edition: standard
-    enabled: true
-    licenseKey: 024C0Z101VKC9VVO9GS8W64N
-    schemaVersion: 1.0.0
   image-resizer:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
-  postmark:
+  knock-knock:
     edition: standard
     enabled: true
-    schemaVersion: 2.0.1
+    schemaVersion: 1.1.1
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: FEBUI6OSDOPDHC5IVIVKY4QD
     schemaVersion: 3.0.13
   site-switcher:
     edition: standard
@@ -43,6 +35,7 @@ plugins:
   translations-admin:
     edition: standard
     enabled: true
+    licenseKey: GLSF4BE6PO2GC1XM1T7NHUU6
     schemaVersion: 1.1.0
   vite:
     edition: standard

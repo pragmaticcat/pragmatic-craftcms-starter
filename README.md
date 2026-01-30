@@ -1,4 +1,4 @@
-## About onedarnleyroad/craftcms
+## Sobre el projecte
 
 A Craft CMS starter project using DDEV for local hosting and Vite for front-end bundling and HMR.
 
@@ -63,7 +63,7 @@ Last, clean up and set some default files for use:
 cp .env.example .env
 mv -f composer.json.default composer.json
 mv -f .gitignore.default .gitignore
-rm CHANGELOG.md && rm LICENSE.md && rm README.md
+rm CHANGELOG.md && rm LICENSE.md
 ```
 
 ### Option 3: Manual Download
@@ -75,7 +75,7 @@ cd PATH
 cp .env.example .env
 mv -f composer.json.default composer.json
 mv -f .gitignore.default .gitignore
-rm CHANGELOG.md && rm LICENSE.md && rm README.md
+rm CHANGELOG.md && rm LICENSE.md
 ```
 
 ## Configuring DDEV
@@ -150,13 +150,10 @@ A Makefile has been included to provide a unified CLI for common development com
 ## Craft CMS Plugins
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)
-1. [CP Field Inspect](https://plugins.craftcms.com/cp-field-inspect)
 1. [Craft Autocomplete](https://github.com/nystudio107/craft-autocomplete)
-1. [Hyper](https://plugins.craftcms.com/hyper)
 1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
 1. [Postmark](https://plugins.craftcms.com/postmark)
 1. [Seomatic](https://nystudio107.com/docs/seomatic/)
-1. [Servd Assets and Helpers](https://github.com/servdhost/craft-asset-storage)
 1. [Vite](https://github.com/nystudio107/craft-vite)
 
 ## Tailwind Plugins
