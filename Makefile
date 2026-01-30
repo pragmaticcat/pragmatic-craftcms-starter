@@ -4,9 +4,6 @@ build: up
 	ddev exec npm run build
 dev: build
 	ddev exec npm run serve
-pull: up
-	ddev exec php craft servd-asset-storage/local/pull-database --from=production --interactive=0
-	ddev composer install
 install: up build
 	ddev exec php craft setup/app-id \
 		$(filter-out $@,$(MAKECMDGOALS))
@@ -15,9 +12,11 @@ install: up build
 	ddev exec php craft install \
 		$(filter-out $@,$(MAKECMDGOALS))
 	ddev exec php craft plugin/install ckeditor
-	ddev exec php craft plugin/install cp-field-inspect
-	ddev exec php craft plugin/install hyper
-	ddev exec php craft plugin/install postmark
+	ddev exec php craft plugin/install image-resizer
+	ddev exec php craft plugin/install knock-knock
+	ddev exec php craft plugin/install translate
+	ddev exec php craft plugin/install craft-siteswitcher
+	ddev exec php craft plugin/install craft-seomatic
 	ddev exec php craft plugin/install vite
 up:
 	if [ ! "$$(ddev describe | grep OK)" ]; then \
