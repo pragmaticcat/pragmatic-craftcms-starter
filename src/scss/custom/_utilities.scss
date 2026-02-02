@@ -3,13 +3,13 @@
 
 @for $i from 1 through 9 {
   .ls-0#{$i} {
-    letter-spacing: #{$i/10}rem;
+    letter-spacing: #{calc($i/10)}rem;
   }
 }
 
 @for $i from 1 through 200 {
   .lh-#{$i}{
-    line-height: #{$i/100};
+    line-height: #{calc($i/100)};
   }
 }
 
