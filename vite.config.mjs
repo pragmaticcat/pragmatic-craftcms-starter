@@ -43,5 +43,7 @@ export default defineConfig(({command}) => ({
     host: '0.0.0.0',
     port: 3000,
     strictPort: true,
+    cors: true,
+    origin: `${process.env.PRIMARY_SITE_URL?.replace(/\/$/, '')}:3000`,
   },
 }));
