@@ -2,13 +2,6 @@
 
 A Craft CMS starter project using DDEV for local hosting and Vite for front-end bundling and HMR.
 
-> https://user-images.githubusercontent.com/134110/132591782-0bcc9465-eb62-46e0-9337-6154bf45fe97.mp4
-> 
-> ☝️ A 1-min video demo, going from zero to Vite HMR on a fresh Craft install, with only 3 CLI commands:  
-> 1. `composer create-project...`
-> 2. `make install`
-> 3. `make dev`
-
 ## Notable Features:
 
 - [DDEV](https://ddev.readthedocs.io/) for local development
