@@ -148,23 +148,13 @@ A Makefile has been included to provide a unified CLI for common development com
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)
 1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
 1. [Seomatic](https://nystudio107.com/docs/seomatic/)
+1. [Bootstrap](https://getbootstrap.com/)
 1. [Vite](https://github.com/nystudio107/craft-vite)
-
-## Tailwind Plugins
-
-1. [Aspect Ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
-1. [Line Clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-1. [Typography](https://github.com/tailwindlabs/tailwindcss-typography)
 
 ## Javascript Libraries
 
 1. [AlpineJS](https://alpinejs.dev/)
 1. [Lazysizes](https://afarkas.github.io/lazysizes/)
-
-## Roadmap
-
-- Continue to improve docs
-- Bugfixes, new features
 
 ## Acknowledgements & Credits
 

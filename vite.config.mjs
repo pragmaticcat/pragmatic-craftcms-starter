@@ -16,6 +16,7 @@ export default defineConfig(({command}) => ({
     rollupOptions: {
       input: {
         app: path.resolve(__dirname, 'src/js/app.js'),
+        styles: path.resolve(__dirname, 'src/scss/app.scss'),
       },
     },
     sourcemap: true
@@ -35,7 +36,7 @@ export default defineConfig(({command}) => ({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@css': path.resolve(__dirname, 'src/pcss'),
+      '@scss': path.resolve(__dirname, 'src/scss'),
       '@js': path.resolve(__dirname, 'src/js'),
     },
   },
