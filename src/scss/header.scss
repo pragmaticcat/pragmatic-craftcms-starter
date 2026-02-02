@@ -1,0 +1,36 @@
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  background-color: transparent;
+
+  transition: top .5s ease-out;
+
+  z-index: 100;
+
+  color: white;
+
+
+  &.opaque{
+    z-index: 110;
+    position: fixed;
+    top:0;
+
+    //background-color: $color-beige;
+    color: black;
+
+    transition: top .25s ease-out;
+
+  }
+
+  &.forceOpaque{
+    color: black;
+
+  }
+
+  @include media-breakpoint-down(lg) {
+
+  }
+}

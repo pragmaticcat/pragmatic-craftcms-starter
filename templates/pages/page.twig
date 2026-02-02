@@ -13,9 +13,11 @@
         {% include "slices/" ~ slice.type ~ "" with {'slice': slice} %}
     {% endfor %}#}
 
+
     <div class="p-4 mx-auto w-full max-w-4xl bg-white shadow">
       <div class="max-w-[40rem]">
         <div class="prose prose-xl prose-red">
+          <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000">Content</div>
           <h1>Welcome</h1>
           <p>Thanks for installing Craft CMS!</p>
           <p>You're looking at the <code>index.html</code> template file located in your

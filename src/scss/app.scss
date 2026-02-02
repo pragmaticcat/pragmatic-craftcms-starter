@@ -1,8 +1,21 @@
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap";
 
+// Import AOS
+@import "aos/dist/aos.css";
+
+// Import Fancyapps
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+@import "@fancyapps/ui/dist/carousel/carousel.css";
+@import "@fancyapps/ui/dist/carousel/carousel.autoplay.css";
+
 // Import custom styles
 @import "custom/variables";
 @import "custom/base";
 @import "custom/components";
 @import "custom/utilities";
+
+@import "fonts";
+
+@import "header";
+@import "footer";
