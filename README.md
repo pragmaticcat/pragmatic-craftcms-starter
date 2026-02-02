@@ -153,7 +153,11 @@ A Makefile has been included to provide a unified CLI for common development com
 
 ## Javascript Libraries
 
-1. [AlpineJS](https://alpinejs.dev/)
+1. [jQuery](https://jquery.com/)
+1. [AOS](https://michalsnik.github.io/aos/)
+1. [GSAP](https://gsap.com/)
+1. [Fancyapps Carousel](https://fancyapps.com/carousel/)
+1. [Fancyapps Fancybox](https://fancyapps.com/fancybox/)
 1. [Lazysizes](https://afarkas.github.io/lazysizes/)
 
 ## Acknowledgements & Credits
