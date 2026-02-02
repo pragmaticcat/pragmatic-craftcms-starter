@@ -147,12 +147,15 @@ A Makefile has been included to provide a unified CLI for common development com
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)
 1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
-1. [Seomatic](https://nystudio107.com/docs/seomatic/)
-1. [Bootstrap](https://getbootstrap.com/)
-1. [Vite](https://github.com/nystudio107/craft-vite)
+1. [Seomatic](https://plugins.craftcms.com/seomatic)
+1. [Vite](https://plugins.craftcms.com/vite)
+1. [Image resize](https://plugins.craftcms.com/image-resizer)
+1. [Site switcher](https://plugins.craftcms.com/site-switcher)
+1. [Translations admin](https://plugins.craftcms.com/translations-admin)
 
 ## Javascript Libraries
 
+1. [Bootstrap](https://getbootstrap.com/)
 1. [jQuery](https://jquery.com/)
 1. [AOS](https://michalsnik.github.io/aos/)
 1. [GSAP](https://gsap.com/)
