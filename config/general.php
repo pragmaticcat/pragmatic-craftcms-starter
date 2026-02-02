@@ -34,6 +34,7 @@ return [
     'isSystemLive' => (bool) App::env('IS_SYSTEM_LIVE'),
     'maxRevisions' => 10,
     'omitScriptNameInUrls' => true,
+	'preloadSingles' => true,
     'preserveCmykColorspace' => true,
     'preserveImageColorProfiles' => true,
     'preventUserEnumeration' => true,
