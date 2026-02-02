@@ -1,0 +1,92 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  edcee734-dd28-4ede-8b8e-0a0120467ada:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-02-02T10:39:06+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f7c1feb5-8585-488c-9e3c-bbec1e83e932
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-02T11:03:57+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 64061d69-ee1b-46a3-9324-d5019a1394ca # Slices
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afbe43b1-fee9-462d-b8db-204f5d98f297
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenido
+        uid: 560d4070-bf84-417c-a6e9-219121965d02
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-02-02T10:41:08+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 6f7237de-98e5-487b-839a-dd78c52fa240 # SEO
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2147235c-49e7-4196-a5d6-2b1cc4aaf65f
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 52472188-9b0a-457c-9d25-59fd4c840986
+        userCondition: null
+    thumbFieldKey: null
+handle: page
+hasTitleField: true
+icon: null
+name: Page
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

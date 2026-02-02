@@ -1,0 +1,16 @@
+{% import "/includes/macros/img.twig" as img %}
+{% import "/includes/macros/svg.twig" as svg %}
+
+{% set pageId = entry.slug %}
+
+{% extends "/layouts/base" %}
+
+{% block pageId %}{{ pageId }}{% endblock %}
+
+{% block body %}
+
+    {% for slice in entry.slices.all() %}
+        {% include "slices/" ~ slice.type ~ "" with {'slice': slice} %}
+    {% endfor %}
+
+{% endblock %}

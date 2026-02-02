@@ -1,15 +1,41 @@
-dateModified: 1769777252
+dateModified: 1770030418
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Oriol Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  imagen:
+    hasUrls: true
+    name: Imagen
+    settings:
+      path: '@webroot/assets/uploads/imagen'
+    type: craft\fs\Local
+    url: '@web/assets/uploads/imagen'
 meta:
   __names__:
+    0a06bc5f-2e04-4a7a-8360-350090bfbfa6: Enlace # Enlace
     1a5b9fdc-1c32-4e52-a8c6-324ce30e35e1: Català # Català
+    2ae9ffa4-f063-4622-9ce9-242dd916d99b: 'Fit 2000' # Fit 2000
+    5a61419b-ae2d-4376-af16-96592e9cf0a2: 'Enlace i18n' # Enlace i18n
+    6f7237de-98e5-487b-839a-dd78c52fa240: SEO # SEO
+    8ab29f18-2345-4d26-83ee-b63fb7be6fda: 'Texto simple multi' # Texto simple multi
+    8df7a5a9-0c4f-4443-a4c5-c9c2e3691239: 'Slice > Contacto' # Slice > Contacto
+    37dde611-88e0-4377-ba85-8ba5c7319eee: 'Slice > Home > Masthead' # Slice > Home > Masthead
     38d0a421-6127-4344-aca0-1ff65c8b8594: Simple # Simple
+    95bc1e22-93fa-49aa-999a-bfcff2fc1f3e: 'Texto simple' # Texto simple
+    771cf3a5-13d3-4309-9f27-a4b6dfdc4fab: Imagen # Imagen
+    8429b0f2-af63-4dc3-9b47-04ae49c3849d: 'Imágenes i18n' # Imágenes i18n
+    64061d69-ee1b-46a3-9324-d5019a1394ca: Slices # Slices
+    91913eed-3eac-4d98-8363-37d4a108cabb: Home # Home
+    2721776a-b5ff-4590-990e-6b8a127497e8: Imágenes # Imágenes
+    39235805-5257-4042-a937-b1bc04f882e7: 'Fit 1500' # Fit 1500
+    a58e7ac6-eeb6-4b7c-a26a-2e1f8c44f478: 'Texto rico' # Texto rico
+    ab0dc730-c3fd-4174-b818-495eadb494b3: 'Fit 500' # Fit 500
     b5f0b813-586b-4599-b8ce-e8ef1b0eb355: Español # Español
+    b5620131-314c-43f4-94f2-c02994402adf: Page # Page
     de3b4f14-0161-4bc8-b49f-7e7c334472e3: 'Oriol Craft Starter' # Oriol Craft Starter
     e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
+    fc14ea14-8531-40c0-a56d-15d19052fb34: 'Fit 1000' # Fit 1000
 plugins:
   ckeditor:
     edition: standard

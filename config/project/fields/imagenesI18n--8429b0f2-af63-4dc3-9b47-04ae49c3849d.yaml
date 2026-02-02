@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: imagenesI18n
+instructions: null
+name: 'Imágenes i18n'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:771cf3a5-13d3-4309-9f27-a4b6dfdc4fab' # Imagen
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:771cf3a5-13d3-4309-9f27-a4b6dfdc4fab' # Imagen
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:771cf3a5-13d3-4309-9f27-a4b6dfdc4fab' # Imagen
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: thumbs
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

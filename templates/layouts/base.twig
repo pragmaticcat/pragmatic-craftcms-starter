@@ -1,0 +1,35 @@
+
+{% set currentLanguage = craft.app.language %}
+
+{% set element = entry is defined and entry is not null ? entry : (category is defined and category is not null ? category : null) %}
+
+<!DOCTYPE html>
+<html class="no-js"
+      lang="{{ currentSite.language }}"
+      dir="{{craft.app.i18n.getLocaleById(currentSite.id).getOrientation()}}">>
+
+    {% include '/includes/head' %}
+
+    <body id="body" class="{{block('pageId')}}">
+
+        {% include '/includes/header' with {'section': block('pageId'), 'forceOpaque': block('forceOpaque') ?? null } %}
+
+        <main id="smooth-wrapper">
+
+            <div id="smooth-content">
+
+                {% block body %}
+                {% endblock %}
+
+                {% include '/includes/footer' with {'section': block('pageId') } %}
+            </div>
+
+        </main>
+    </body>
+
+    {% block javascript %}
+
+    {% endblock %}
+
+    {% include '/includes/footer-scripts' %}
+</html>

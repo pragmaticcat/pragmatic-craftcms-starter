@@ -1,0 +1,21 @@
+<head>
+    <style>[x-cloak] { display: none !important; }</style>
+    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <title>{{ siteName }}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+
+    {% include "includes/analytics.twig" %}
+    {% include "includes/fonts.twig" %}
+    {% include "includes/scripts.twig" %}
+
+    {% do view.registerCssFile("/assets/styles/styles.css") %}
+
+</head>

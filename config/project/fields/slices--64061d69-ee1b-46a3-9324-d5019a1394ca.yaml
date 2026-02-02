@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: slices
+instructions: null
+name: Slices
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 37dde611-88e0-4377-ba85-8ba5c7319eee # Slice > Home > Masthead
+        -
+          - group
+          - Home
+    -
+      __assoc__:
+        -
+          - uid
+          - 8df7a5a9-0c4f-4443-a4c5-c9c2e3691239 # Slice > Contacto
+        -
+          - group
+          - Contacto
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -18,7 +18,7 @@
   },
   "require": {
     "craftcms/ckeditor": "^4.2.0",
-    "craftcms/cms": "^5.0.0",
+    "craftcms/cms": "^5.9.5",
     "doublesecretagency/craft-siteswitcher": "^3.0.1",
     "mutation/translate": "^4.2.2",
     "nystudio107/craft-seomatic": "^5.1.20",
