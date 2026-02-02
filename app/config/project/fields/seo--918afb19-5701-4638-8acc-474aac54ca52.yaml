@@ -1,0 +1,8 @@
+columnSuffix: null
+handle: seo
+instructions: null
+name: SEO
+searchable: false
+translationKeyFormat: null
+translationMethod: site
+type: propis\pragmaticseo\fields\SeoField

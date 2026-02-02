@@ -1,0 +1,49 @@
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.textField({
+    label: 'Title Separator',
+    instructions: 'Character(s) used to separate the page title from the site name.',
+    id: 'titleSeparator',
+    name: 'titleSeparator',
+    value: settings.titleSeparator,
+    size: 5,
+}) }}
+
+{{ forms.selectField({
+    label: 'Site Name Position',
+    instructions: 'Where to place the site name relative to the page title.',
+    id: 'siteNamePosition',
+    name: 'siteNamePosition',
+    value: settings.siteNamePosition,
+    options: [
+        { label: 'After page title', value: 'after' },
+        { label: 'Before page title', value: 'before' },
+    ],
+}) }}
+
+{{ forms.lightswitchField({
+    label: 'Append Site Name',
+    instructions: 'Whether to append the site name to the page title.',
+    id: 'appendSiteName',
+    name: 'appendSiteName',
+    on: settings.appendSiteName,
+}) }}
+
+{{ forms.textareaField({
+    label: 'Default Meta Description',
+    instructions: 'Fallback description when entries have no SEO description set.',
+    id: 'defaultDescription',
+    name: 'defaultDescription',
+    value: settings.defaultDescription,
+    rows: 3,
+}) }}
+
+{{ forms.textareaField({
+    label: 'robots.txt Content',
+    instructions: 'Use <code>{{ siteUrl }}</code> as a placeholder for the site URL.',
+    id: 'robotsTxt',
+    name: 'robotsTxt',
+    value: settings.robotsTxt,
+    rows: 8,
+    class: 'code',
+}) }}

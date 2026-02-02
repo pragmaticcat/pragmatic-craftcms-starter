@@ -1,0 +1,22 @@
+{% import '_includes/forms.twig' as forms %}
+
+{{ forms.textField({
+    label: 'SEO Title',
+    instructions: 'Max 70 characters. Leave blank to use the entry title.',
+    id: namePrefix ~ '-seoTitle',
+    name: namePrefix ~ '[seoTitle]',
+    value: value.seoTitle ?? '',
+    maxlength: 70,
+    showCharsLeft: true,
+}) }}
+
+{{ forms.textareaField({
+    label: 'SEO Description',
+    instructions: 'Max 160 characters.',
+    id: namePrefix ~ '-seoDescription',
+    name: namePrefix ~ '[seoDescription]',
+    value: value.seoDescription ?? '',
+    maxlength: 160,
+    showCharsLeft: true,
+    rows: 3,
+}) }}
