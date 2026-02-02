@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b84ed40b7ab2e01c87e0a9dc6c0145a9",
+    "content-hash": "087baec83d5d21141bfe4eca47c09e71",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -459,11 +459,6 @@
         {
             "name": "craftcms/ckeditor",
             "version": "4.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "00289e6ce5f9a7c9595c5a51c2c726585aad5964"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/00289e6ce5f9a7c9595c5a51c2c726585aad5964",
@@ -477,12 +472,6 @@
                 "nystudio107/craft-code-editor": ">=1.0.8 <=1.0.13 || ^1.0.16",
                 "php": "^8.2"
             },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main",
-                "vlucas/phpdotenv": "^5.5"
-            },
             "type": "craft-plugin",
             "extra": {
                 "name": "CKEditor",
@@ -494,7 +483,6 @@
                     "craft\\ckeditor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -506,18 +494,18 @@
             ],
             "description": "Edit rich text content in Craft CMS using CKEditor.",
             "keywords": [
-                "CKEditor",
+                "ckeditor",
                 "cms",
                 "craftcms",
                 "html",
                 "yii2"
             ],
             "support": {
-                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/ckeditor/issues?state=open",
-                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
-                "source": "https://github.com/craftcms/ckeditor"
+                "source": "https://github.com/craftcms/ckeditor",
+                "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
+                "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
             "time": "2025-11-20T01:01:30+00:00"
         },
@@ -632,11 +620,6 @@
         {
             "name": "craftcms/html-field",
             "version": "3.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/html-field.git",
-                "reference": "3f23569c94d64e9054e3402447e03bd3c4c7b181"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/craftcms/html-field/zipball/3f23569c94d64e9054e3402447e03bd3c4c7b181",
@@ -650,18 +633,12 @@
                 "symfony/css-selector": "^6.0|^7.0",
                 "symfony/dom-crawler": "^6.0|^7.0"
             },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "craft\\htmlfield\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -673,11 +650,11 @@
             ],
             "description": "Base class for Craft CMS field types with HTML values.",
             "support": {
-                "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
                 "email": "support@craftcms.com",
                 "issues": "https://github.com/craftcms/html-field/issues?state=open",
-                "rss": "https://github.com/craftcms/html-field/commits/main.atom",
-                "source": "https://github.com/craftcms/html-field"
+                "source": "https://github.com/craftcms/html-field",
+                "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
+                "rss": "https://github.com/craftcms/html-field/commits/main.atom"
             },
             "time": "2025-04-30T16:54:07+00:00"
         },
@@ -2190,11 +2167,6 @@
         {
             "name": "league/html-to-markdown",
             "version": "5.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/html-to-markdown.git",
-                "reference": "0b4066eede55c48f38bcee4fb8f0aa85654390fd"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/html-to-markdown/zipball/0b4066eede55c48f38bcee4fb8f0aa85654390fd",
@@ -2205,14 +2177,6 @@
                 "ext-dom": "*",
                 "ext-xml": "*",
                 "php": "^7.2.5 || ^8.0"
-            },
-            "require-dev": {
-                "mikehaertl/php-shellcommand": "^1.1.0",
-                "phpstan/phpstan": "^1.8.8",
-                "phpunit/phpunit": "^8.5 || ^9.2",
-                "scrutinizer/ocular": "^1.6",
-                "unleashedtech/php-coding-standard": "^2.7 || ^3.0",
-                "vimeo/psalm": "^4.22 || ^5.0"
             },
             "bin": [
                 "bin/html-to-markdown"
@@ -2228,7 +2192,6 @@
                     "League\\HTMLToMarkdown\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2251,28 +2214,6 @@
             "keywords": [
                 "html",
                 "markdown"
-            ],
-            "support": {
-                "issues": "https://github.com/thephpleague/html-to-markdown/issues",
-                "source": "https://github.com/thephpleague/html-to-markdown/tree/5.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.colinodell.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.paypal.me/colinpodell/10.00",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/colinodell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/league/html-to-markdown",
-                    "type": "tidelift"
-                }
             ],
             "time": "2023-07-12T21:21:09+00:00"
         },
@@ -2685,11 +2626,6 @@
             "name": "ml/iri",
             "version": "1.1.4",
             "target-dir": "ML/IRI",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lanthaler/IRI.git",
-                "reference": "cbd44fa913e00ea624241b38cefaa99da8d71341"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/lanthaler/IRI/zipball/cbd44fa913e00ea624241b38cefaa99da8d71341",
@@ -2706,7 +2642,6 @@
                     "ML\\IRI": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2726,20 +2661,11 @@
                 "uri",
                 "url"
             ],
-            "support": {
-                "issues": "https://github.com/lanthaler/IRI/issues",
-                "source": "https://github.com/lanthaler/IRI/tree/master"
-            },
             "time": "2014-01-21T13:43:39+00:00"
         },
         {
             "name": "ml/json-ld",
             "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lanthaler/JsonLD.git",
-                "reference": "537e68e87a6bce23e57c575cd5dcac1f67ce25d8"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/lanthaler/JsonLD/zipball/537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
@@ -2751,17 +2677,12 @@
                 "ml/iri": "^1.1.1",
                 "php": ">=5.3.0"
             },
-            "require-dev": {
-                "json-ld/tests": "1.0",
-                "phpunit/phpunit": "^4"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "ML\\JsonLD\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2779,10 +2700,6 @@
                 "JSON-LD",
                 "jsonld"
             ],
-            "support": {
-                "issues": "https://github.com/lanthaler/JsonLD/issues",
-                "source": "https://github.com/lanthaler/JsonLD/tree/1.2.1"
-            },
             "time": "2022-09-29T08:45:17+00:00"
         },
         {
@@ -3132,16 +3049,16 @@
         },
         {
             "name": "nystudio107/craft-code-editor",
-            "version": "1.0.28",
+            "version": "1.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-code-editor.git",
-                "reference": "7ffd5e9291e2b42d6f9f859d1734eb6500d042ac"
+                "reference": "5b071512ee2ad2b8004f979f88ff3bf722bbcb4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/7ffd5e9291e2b42d6f9f859d1734eb6500d042ac",
-                "reference": "7ffd5e9291e2b42d6f9f859d1734eb6500d042ac",
+                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/5b071512ee2ad2b8004f979f88ff3bf722bbcb4d",
+                "reference": "5b071512ee2ad2b8004f979f88ff3bf722bbcb4d",
                 "shasum": ""
             },
             "require": {
@@ -3196,7 +3113,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-12-17T22:43:40+00:00"
+            "time": "2026-01-30T19:10:22+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
@@ -3363,11 +3280,6 @@
         {
             "name": "nystudio107/craft-vite",
             "version": "5.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "a2eaa9beb4abf1add99e8fc7892e8df57c6b49e8"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/a2eaa9beb4abf1add99e8fc7892e8df57c6b49e8",
@@ -3379,25 +3291,18 @@
                 "nystudio107/craft-plugin-vite": "^5.0.2",
                 "php": "^8.2"
             },
-            "require-dev": {
-                "craftcms/cloud": "^2.0.0",
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main"
-            },
             "type": "craft-plugin",
             "extra": {
-                "name": "Vite",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/v5/CHANGELOG.md",
                 "class": "nystudio107\\vite\\Vite",
                 "handle": "vite",
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/v5/CHANGELOG.md"
+                "name": "Vite"
             },
             "autoload": {
                 "psr-4": {
                     "nystudio107\\vite\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3409,8 +3314,8 @@
             ],
             "description": "Allows the use of the Vite.js next generation frontend tooling with Craft CMS",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "vite"
@@ -3420,22 +3325,11 @@
                 "issues": "https://nystudio107.com/plugins/vite/support",
                 "source": "https://github.com/nystudio107/craft-vite"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
             "time": "2024-08-14T02:05:18+00:00"
         },
         {
             "name": "oscarotero/html-parser",
             "version": "v0.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oscarotero/html-parser.git",
-                "reference": "10f3219267a365d9433f2f7d1694209c9d436c8d"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/oscarotero/html-parser/zipball/10f3219267a365d9433f2f7d1694209c9d436c8d",
@@ -3445,17 +3339,12 @@
             "require": {
                 "php": "^7.2 || ^8"
             },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.11",
-                "phpunit/phpunit": "^8.0"
-            },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "HtmlParser\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3474,11 +3363,6 @@
                 "html",
                 "parser"
             ],
-            "support": {
-                "email": "oom@oscarotero.com",
-                "issues": "https://github.com/oscarotero/html-parser/issues",
-                "source": "https://github.com/oscarotero/html-parser/tree/v0.1.8"
-            },
             "time": "2023-11-29T20:28:41+00:00"
         },
         {
@@ -4182,6 +4066,38 @@
                 "two factor auth"
             ],
             "time": "2021-08-15T12:26:51+00:00"
+        },
+        {
+            "name": "propis/pragmatic-seo",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "plugins/pragmatic-seo",
+                "reference": "071b9e9ab0789cccc7321381a95aa78e2a4d2a1c"
+            },
+            "require": {
+                "craftcms/cms": "^5.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "handle": "pragmatic-seo",
+                "name": "Pragmatic SEO",
+                "developer": "Propis",
+                "class": "propis\\pragmaticseo\\PragmaticSeo",
+                "hasCpSettings": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "propis\\pragmaticseo\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Pragmatic SEO plugin for Craft CMS 5",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "psr/clock",
@@ -7654,11 +7570,6 @@
         {
             "name": "verbb/knock-knock",
             "version": "3.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/knock-knock.git",
-                "reference": "68b0d7de0825d728ea009486b3a11d630250cc84"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/verbb/knock-knock/zipball/68b0d7de0825d728ea009486b3a11d630250cc84",
@@ -7673,16 +7584,15 @@
             "type": "craft-plugin",
             "extra": {
                 "name": "Knock Knock",
-                "class": "verbb\\knockknock\\KnockKnock",
                 "handle": "knock-knock",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/knock-knock/craft-5/CHANGELOG.md"
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/knock-knock/craft-5/CHANGELOG.md",
+                "class": "verbb\\knockknock\\KnockKnock"
             },
             "autoload": {
                 "psr-4": {
                     "verbb\\knockknock\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7694,25 +7604,19 @@
             ],
             "description": "Password protect your public facing Craft website with a single password.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "knock-knock"
             ],
             "support": {
-                "docs": "https://github.com/verbb/knock-knock",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/knock-knock/issues?state=open",
-                "rss": "https://github.com/verbb/knock-knock/commits/v2.atom",
-                "source": "https://github.com/verbb/knock-knock"
+                "source": "https://github.com/verbb/knock-knock",
+                "docs": "https://github.com/verbb/knock-knock",
+                "rss": "https://github.com/verbb/knock-knock/commits/v2.atom"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
             "time": "2025-11-29T03:52:23+00:00"
         },
         {
@@ -8664,16 +8568,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.18",
+            "version": "v0.12.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "ddff0ac01beddc251786fe70367cd8bbdb258196"
+                "reference": "a4f766e5c5b6773d8399711019bb7d90875a50ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/ddff0ac01beddc251786fe70367cd8bbdb258196",
-                "reference": "ddff0ac01beddc251786fe70367cd8bbdb258196",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a4f766e5c5b6773d8399711019bb7d90875a50ee",
+                "reference": "a4f766e5c5b6773d8399711019bb7d90875a50ee",
                 "shasum": ""
             },
             "require": {
@@ -8737,9 +8641,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.18"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.19"
             },
-            "time": "2025-12-17T14:35:46+00:00"
+            "time": "2026-01-30T17:33:13+00:00"
         },
         {
             "name": "symfony/console",
@@ -8907,13 +8811,15 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "propis/pragmatic-seo": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": [],
+    "platform": {},
+    "platform-dev": {},
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

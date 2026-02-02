@@ -59,6 +59,28 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2026-02-02T15:59:04+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 918afb19-5701-4638-8acc-474aac54ca52 # SEO
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0d88e10-1ee1-42e9-8e07-c8bb969d36cc
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 039cf73f-0dae-442a-abae-300091960060
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
             dateAdded: '2026-02-02T10:41:08+00:00'
             editCondition: null
             elementCondition: null
@@ -74,7 +96,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: SEOmatic
         uid: 52472188-9b0a-457c-9d25-59fd4c840986
         userCondition: null
     thumbFieldKey: null

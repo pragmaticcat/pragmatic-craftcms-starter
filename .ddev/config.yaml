@@ -1,6 +1,7 @@
 name: oriol-craft-starter
 type: craftcms
 docroot: ''
+composer_root: './app'
 php_version: "8.2"
 webserver_type: nginx-fpm
 xdebug_enabled: false

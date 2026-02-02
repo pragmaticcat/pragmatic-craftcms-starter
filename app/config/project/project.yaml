@@ -1,4 +1,4 @@
-dateModified: 1770030802
+dateModified: 1770048157
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Oriol Craft Starter'
@@ -24,6 +24,7 @@ meta:
     38d0a421-6127-4344-aca0-1ff65c8b8594: Simple # Simple
     95bc1e22-93fa-49aa-999a-bfcff2fc1f3e: 'Texto simple' # Texto simple
     771cf3a5-13d3-4309-9f27-a4b6dfdc4fab: Imagen # Imagen
+    918afb19-5701-4638-8acc-474aac54ca52: SEO # SEO
     8429b0f2-af63-4dc3-9b47-04ae49c3849d: 'Imágenes i18n' # Imágenes i18n
     64061d69-ee1b-46a3-9324-d5019a1394ca: Slices # Slices
     91913eed-3eac-4d98-8363-37d4a108cabb: Home # Home
@@ -50,6 +51,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
+  pragmatic-seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true

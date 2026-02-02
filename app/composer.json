@@ -23,6 +23,7 @@
     "mutation/translate": "^4.2.2",
     "nystudio107/craft-seomatic": "^5.1.20",
     "nystudio107/craft-vite": "^5.0.1",
+    "propis/pragmatic-seo": "dev-main",
     "verbb/image-resizer": "^4.0.4",
     "verbb/knock-knock": "^3.0.1",
     "vlucas/phpdotenv": "^5.4.0"
@@ -54,6 +55,10 @@
     "post-install-cmd": "@post-craft-update"
   },
   "repositories": [
+    {
+      "type": "path",
+      "url": "plugins/pragmatic-seo"
+    },
     {
       "type": "composer",
       "url": "https://composer.craftcms.com",
