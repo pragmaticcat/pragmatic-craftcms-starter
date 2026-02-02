@@ -13,10 +13,6 @@ A Craft CMS starter project using DDEV for local hosting and Vite for front-end 
 
 - [DDEV](https://ddev.readthedocs.io/) for local development
 - [Vite 5.x](https://vitejs.dev/) for front-end bundling & HMR
-- [Tailwind 3.x](https://tailwindcss.com) for utility-first CSS
-- [Alpine 3.x](https://alpinejs.dev/) for lightweight reactivity
-- [Servd](https://servd.host/) as the default hosting environment
-- [Postmark](https://postmarkapp.com/) for email delivery
 - [Makefile](https://www.gnu.org/software/make/manual/make.html) for common CLI commands
 
 ## Local machine prerequisites:
@@ -150,9 +146,7 @@ A Makefile has been included to provide a unified CLI for common development com
 ## Craft CMS Plugins
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)
-1. [Craft Autocomplete](https://github.com/nystudio107/craft-autocomplete)
 1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
-1. [Postmark](https://plugins.craftcms.com/postmark)
 1. [Seomatic](https://nystudio107.com/docs/seomatic/)
 1. [Vite](https://github.com/nystudio107/craft-vite)
 
