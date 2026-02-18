@@ -1,5 +1,16 @@
-// Import Bootstrap
+// Bootstrap prerequisites — establishes $spacer and $spacers defaults
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// Merge custom spacers into Bootstrap's map
+@import "custom/variables";
+
+// Import Bootstrap (re-imports functions/variables, !default won't override our merged map)
 @import "bootstrap/scss/bootstrap";
+
+@import "custom/base";
+@import "custom/components";
+@import "custom/utilities";
 
 // Import AOS
 @import "aos/dist/aos.css";
@@ -8,12 +19,6 @@
 @import "@fancyapps/ui/dist/fancybox/fancybox.css";
 @import "@fancyapps/ui/dist/carousel/carousel.css";
 @import "@fancyapps/ui/dist/carousel/carousel.autoplay.css";
-
-// Import custom styles
-@import "custom/variables";
-@import "custom/base";
-@import "custom/components";
-@import "custom/utilities";
 
 @import "fonts";
 

@@ -1,2 +1,30 @@
 // Custom Bootstrap variable overrides
-// Add your custom variables here before Bootstrap is loaded
+
+// scss-docs-start spacer-variables-maps
+$spacers: map-merge($spacers, (
+  6: $spacer * 5,
+  7: $spacer * 8,
+  8: $spacer * 13,
+));
+// scss-docs-end spacer-variables-maps
+
+
+// scss-docs-start aspect-ratios
+$aspect-ratios: map-merge($aspect-ratios, (
+  "3x4": calc(4 / 3 * 100%),
+  "9x16": calc(16 / 9 * 100%),
+  "9x21": calc(21 / 9 * 100%)
+));
+// scss-docs-end aspect-ratios
+
+$display-font-sizes: map-merge($display-font-sizes, (
+  1: 1rem,
+  2: 2rem,
+  3: 3rem,
+  4: 4rem,
+  5: 5rem,
+  6: 6rem,
+  7: 7rem,
+  8: 8rem,
+  9: 9rem,
+));

@@ -1,4 +1,4 @@
-name: oriol-craft-starter
+name: pragmatic-craftcms-starter
 type: craftcms
 docroot: ''
 composer_root: './app'
