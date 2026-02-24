@@ -28,7 +28,7 @@ export default defineConfig(({command}) => ({
     }),
     ViteRestart({
       reload: [
-        'templates/**/*',
+        'app/templates/**/*',
       ],
     }),
   ],
