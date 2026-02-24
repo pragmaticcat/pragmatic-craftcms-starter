@@ -18,11 +18,10 @@
   },
   "require": {
     "craftcms/ckeditor": "^4.2.0",
-    "craftcms/cms": "^5.0.0",
+    "craftcms/cms": "^5.9.5",
     "doublesecretagency/craft-siteswitcher": "^3.0.1",
-    "mutation/translate": "^4.2.2",
-    "nystudio107/craft-seomatic": "^5.1.20",
     "nystudio107/craft-vite": "^5.0.1",
+    "pragmatic/web-toolkit-craftcms-plugin": "dev-main",
     "verbb/image-resizer": "^4.0.4",
     "verbb/knock-knock": "^3.0.1",
     "vlucas/phpdotenv": "^5.4.0"
@@ -58,6 +57,10 @@
       "type": "composer",
       "url": "https://composer.craftcms.com",
       "canonical": false
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/pragmaticcat/web-toolkit-craftcms-plugin"
     }
   ]
 }

@@ -24,7 +24,7 @@ you can use `create-project` to pull the latest tagged release.
 Open terminal prompt, and run:
 
 ```shell
-composer create-project onedarnleyroad/craftcms PATH --no-install
+composer create-project pragmaticcat/pragmatic-craftcms-starter PATH --no-install
 ```
 
 Make sure that `PATH` is a **new** or **existing and empty** folder.
@@ -95,15 +95,13 @@ Follow the prompts.
 
 This command will:
 
-1. Copy your local SSH keys into the container (handy if you are setting up [craft-scripts](https://github.com/nystudio107/craft-scripts/))
-2. Start your DDEV project
-3. Install Composer
-4. Install npm
-5. Do a one-time build of Vite
-6. Generate `APP_ID` and save to your `.env` file
-7. Generate `SECURITY_KEY` and save to your `.env` file
-8. Installing Craft for the first time, allowing you to set the admin's account credentials
-9. Install all Craft plugins
+1. Start your DDEV project (with SSH auth)
+2. Build all front-end assets
+3. Install Composer dependencies
+4. Generate `APP_ID` and save to your `.env` file
+5. Generate `SECURITY_KEY` and save to your `.env` file
+6. Install Craft for the first time, allowing you to set the admin's account credentials
+7. Install all Craft plugins
 
 Once the process is complete, type `ddev launch` to open the project in your default browser. 🚀
 
@@ -117,12 +115,8 @@ make dev
 
 This command will:
 
-1. Copy your local SSH keys into the container (handy if you are setting up [craft-scripts](https://github.com/nystudio107/craft-scripts/))
-2. Start your DDEV project
-3. Install Composer
-4. Install npm
-5. Do a one-time build of Vite
-6. Spin up the Vite dev server
+1. Start your DDEV project (with SSH auth)
+2. Build all front-end assets
 
 Open up a browser to your project domain to verify that Vite is connected. Begin crafting beautiful things. ❤️
 
@@ -131,20 +125,18 @@ Open up a browser to your project domain to verify that Vite is connected. Begin
 A Makefile has been included to provide a unified CLI for common development commands.
 
 - `make install` - Runs a complete one-time process to set the project up and install Craft.
-- `make up` - Starts the DDEV project, ensuring that SSH keys have been added, and npm & Composer have been installed.
-- `make dev` - Runs a one-time build of all front-end assets, then starts Vite's server for HMR.
+- `make up` - Starts the DDEV project with SSH auth.
+- `make dev` - Starts the DDEV project and builds all front-end assets.
 - `make build` - Builds all front-end assets.
-- `make pull` - Pull remote db & assets (requires setting up [craft-scripts](https://github.com/nystudio107/craft-scripts/)
 
 ## Craft CMS Plugins
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)
 1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
-1. [Seomatic](https://plugins.craftcms.com/seomatic)
+1. [Pragmatic Web Toolkit](https://github.com/pragmaticcat/web-toolkit-craftcms-plugin)
 1. [Vite](https://plugins.craftcms.com/vite)
-1. [Image resize](https://plugins.craftcms.com/image-resizer)
-1. [Site switcher](https://plugins.craftcms.com/site-switcher)
-1. [Translations admin](https://plugins.craftcms.com/translations-admin)
+1. [Image Resizer](https://plugins.craftcms.com/image-resizer)
+1. [Site Switcher](https://plugins.craftcms.com/site-switcher)
 
 ## Javascript Libraries
 
@@ -152,10 +144,9 @@ A Makefile has been included to provide a unified CLI for common development com
 1. [jQuery](https://jquery.com/)
 1. [AOS](https://michalsnik.github.io/aos/)
 1. [GSAP](https://gsap.com/)
-1. [Fancyapps Carousel](https://fancyapps.com/carousel/)
-1. [Fancyapps Fancybox](https://fancyapps.com/fancybox/)
+1. [Fancyapps UI](https://fancyapps.com/ui/)
 1. [Lazysizes](https://afarkas.github.io/lazysizes/)
 
 ## Acknowledgements & Credits
 
-Aside from the obvious gratitude owed to the entire team at [Pixel & Tonic](https://pixelandtonic.com/) for their tireless work on Craft, a special thanks goes out to Andrew Welch of [nystudio107](https://nystudio107.com/). Not only has he developed some of the most widely used plugins in the Craft ecosystem, he has dedicated countless time and energy to pushing all of us in the community to excel at everything we do. He has an uncanny ability to see through the fog of development war to know what's best - not just for us, but for our future selves, our clients, and the users of the sites we build. His contributions have made all of our sites perform better in SEO, run faster in the browser, and made our development workflow more streamlined and efficient. Hats off to you, sir. 
+Aside from the obvious gratitude owed to the entire team at [Pixel & Tonic](https://pixelandtonic.com/) for their tireless work on Craft, a special thanks goes out to Andrew Welch of [nystudio107](https://nystudio107.com/). Not only has he developed some of the most widely used plugins in the Craft ecosystem, he has dedicated countless time and energy to pushing all of us in the community to excel at everything we do. He has an uncanny ability to see through the fog of development war to know what's best - not just for us, but for our future selves, our clients, and the users of the sites we build. His contributions have made all of our sites perform better in SEO, run faster in the browser, and made our development workflow more streamlined and efficient. Hats off to you, sir.
