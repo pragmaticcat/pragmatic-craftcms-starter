@@ -4,7 +4,7 @@ build: up
 	ddev exec npm run build
 dev: build
 install: up build
-	ddev composer install
+	ddev composer update
 	ddev exec php app/craft setup/app-id \
 		$(filter-out $@,$(MAKECMDGOALS))
 	ddev exec php app/craft setup/security-key \
