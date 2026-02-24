@@ -64,6 +64,28 @@ fieldLayouts:
         name: Contenido
         uid: 25c34fb4-0725-4855-8fe9-db1903c5fe56
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-02-24T10:00:00+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 918afb19-5701-4638-8acc-474aac54ca52 # SEO
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1cc1efb-9967-44c9-b45b-34fcc09b8d4b
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 73fb70f5-a488-4da9-82f3-c35d1d1e0654
+        userCondition: null
     thumbFieldKey: null
 handle: pageHome
 hasTitleField: true

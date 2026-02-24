@@ -1,7 +1,7 @@
-dateModified: 1771927055
+dateModified: 1771927200
 email:
   fromEmail: oriolnoya@gmail.com
-  fromName: 'Oriol Craft Starter'
+  fromName: 'Pragmatic Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   imagen:
@@ -36,7 +36,7 @@ meta:
     b5f0b813-586b-4599-b8ce-e8ef1b0eb355: Español # Español
     b5620131-314c-43f4-94f2-c02994402adf: Page # Page
     d539bfeb-a2ba-438e-b349-6819c97b3384: Pàgina # Pàgina
-    de3b4f14-0161-4bc8-b49f-7e7c334472e3: 'Oriol Craft Starter' # Oriol Craft Starter
+    de3b4f14-0161-4bc8-b49f-7e7c334472e3: 'Pragmatic Craft Starter' # Pragmatic Craft Starter
     e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
     fc14ea14-8531-40c0-a56d-15d19052fb34: 'Fit 1000' # Fit 1000
 plugins:
@@ -71,7 +71,7 @@ plugins:
 system:
   edition: solo
   live: true
-  name: 'Oriol Craft Starter'
+  name: 'Pragmatic Craft Starter'
   schemaVersion: 5.9.0.8
   timeZone: America/Los_Angeles
 users:
