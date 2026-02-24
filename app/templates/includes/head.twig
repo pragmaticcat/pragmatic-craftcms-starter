@@ -5,15 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
-    {{ craft.pragmaticSeo.render(entry ?? null) | raw }}
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    {{ craft.pragmaticToolkit.faviconTags() }}
 
-    {% include "includes/analytics.twig" %}
-    {% include "includes/fonts.twig" %}
-    {% include "includes/scripts.twig" %}
+    {{ pragmaticSEO.render(entry, 'seo')|raw }}
+
+    {# vite our app; pass `false` so that CSS is not async loaded #}
+    {{ craft.vite.script('src/js/app.js', false) }}
+
+    <link rel="stylesheet" href="{{ craft.vite.asset('src/scss/app.scss') }}">
 
 </head>
