@@ -28,3 +28,11 @@ $display-font-sizes: map-merge($display-font-sizes, (
   8: 8rem,
   9: 9rem,
 ));
+
+$custom-colors: (
+  "groc":       #DFFF5B,
+  "beige":      #EDE9DE,
+  "caqui":      #646456,
+  "blau-light": #CDE1E0,
+  "fluorescent": #D3D800,
+);

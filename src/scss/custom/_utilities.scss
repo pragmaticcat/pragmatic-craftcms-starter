@@ -36,3 +36,15 @@
     }
   }
 }
+
+:root {
+  @each $name, $value in $custom-colors {
+    --color-#{$name}: #{$value};
+  }
+}
+
+@each $name, $value in $custom-colors {
+  .bg-#{$name}     { background-color: $value; }
+  .text-#{$name}   { color: $value !important; }
+  .border-#{$name} { border-color: $value !important; }
+}
