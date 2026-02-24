@@ -1,4 +1,4 @@
-dateModified: 1771924794
+dateModified: 1771927055
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Oriol Craft Starter'
@@ -17,7 +17,7 @@ meta:
     1a5b9fdc-1c32-4e52-a8c6-324ce30e35e1: Català # Català
     2ae9ffa4-f063-4622-9ce9-242dd916d99b: 'Fit 2000' # Fit 2000
     5a61419b-ae2d-4376-af16-96592e9cf0a2: 'Enlace i18n' # Enlace i18n
-    6f7237de-98e5-487b-839a-dd78c52fa240: SEO # SEO
+    07a2e00e-b96a-4882-9403-beb20e322495: 'Page > Home' # Page > Home
     8ab29f18-2345-4d26-83ee-b63fb7be6fda: 'Texto simple multi' # Texto simple multi
     8df7a5a9-0c4f-4443-a4c5-c9c2e3691239: 'Slice > Contacto' # Slice > Contacto
     37dde611-88e0-4377-ba85-8ba5c7319eee: 'Slice > Home > Masthead' # Slice > Home > Masthead
@@ -35,6 +35,7 @@ meta:
     ab0dc730-c3fd-4174-b818-495eadb494b3: 'Fit 500' # Fit 500
     b5f0b813-586b-4599-b8ce-e8ef1b0eb355: Español # Español
     b5620131-314c-43f4-94f2-c02994402adf: Page # Page
+    d539bfeb-a2ba-438e-b349-6819c97b3384: Pàgina # Pàgina
     de3b4f14-0161-4bc8-b49f-7e7c334472e3: 'Oriol Craft Starter' # Oriol Craft Starter
     e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
     fc14ea14-8531-40c0-a56d-15d19052fb34: 'Fit 1000' # Fit 1000

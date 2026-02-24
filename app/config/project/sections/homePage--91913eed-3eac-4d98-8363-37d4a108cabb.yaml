@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: b5620131-314c-43f4-94f2-c02994402adf # Page
+    uid: 07a2e00e-b96a-4882-9403-beb20e322495 # Page > Home
 handle: homePage
 maxAuthors: 1
 name: Home
@@ -16,16 +16,16 @@ siteSettings:
   1a5b9fdc-1c32-4e52-a8c6-324ce30e35e1: # Català
     enabledByDefault: true
     hasUrls: true
-    template: pages/page.twig
+    template: pages/home.twig
     uriFormat: __home__
   b5f0b813-586b-4599-b8ce-e8ef1b0eb355: # Español
     enabledByDefault: true
     hasUrls: true
-    template: pages/page.twig
+    template: pages/home.twig
     uriFormat: __home__
   e1e105d7-b880-401b-bb44-8f6c87634b37: # English
     enabledByDefault: true
     hasUrls: true
-    template: pages/page.twig
+    template: pages/home.twig
     uriFormat: __home__
 type: single

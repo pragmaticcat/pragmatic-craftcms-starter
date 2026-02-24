@@ -3,6 +3,12 @@ handle: seo
 instructions: null
 name: SEO
 searchable: false
+settings:
+  defaultDescription: ''
+  defaultImageDescription: ''
+  defaultImageId: null
+  defaultTitle: ''
+  translationMethod: site
 translationKeyFormat: null
 translationMethod: site
-type: propis\pragmaticseo\fields\SeoField
+type: pragmatic\webtoolkit\domains\seo\fields\SeoField

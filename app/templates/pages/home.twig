@@ -1,0 +1,18 @@
+{% import "/includes/macros/img.twig" as img %}
+{% import "/includes/macros/svg.twig" as svg %}
+
+{% set pageId = entry.slug %}
+
+{% extends "/layouts/base" %}
+
+{% block pageId %}{{ pageId }}{% endblock %}
+
+{% block body %}
+
+  {% if entry.pagina.one() and entry.pagina.one().slices and entry.pagina.one().slices.one() %}
+    {% for slice in entry.pagina.one().slices.all() %}
+      {% include "slices/" ~ slice.type ~ "" with {'slice': slice, 'posicio': loop.index-1} %}
+    {% endfor %}
+  {% endif %}
+
+{% endblock %}
