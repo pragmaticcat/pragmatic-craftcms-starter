@@ -52,10 +52,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.1.1
-  pragmatic-seo:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   pragmatic-web-toolkit:
     edition: free
     enabled: true
