@@ -3,21 +3,19 @@
 build: up
 	ddev exec npm run build
 dev: build
-	ddev exec npm run serve
 install: up build
-	ddev exec php craft setup/app-id \
+	ddev exec php app/craft setup/app-id \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php craft setup/security-key \
+	ddev exec php app/craft setup/security-key \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php craft install \
+	ddev exec php app/craft install \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php craft plugin/install ckeditor
-	ddev exec php craft plugin/install image-resizer
-	ddev exec php craft plugin/install knock-knock
-	ddev exec php craft plugin/install translate
-	ddev exec php craft plugin/install craft-siteswitcher
-	ddev exec php craft plugin/install craft-seomatic
-	ddev exec php craft plugin/install vite
+	ddev exec php app/craft plugin/install ckeditor
+	ddev exec php app/craft plugin/install image-resizer
+	ddev exec php app/craft plugin/install knock-knock
+	ddev exec php app/craft plugin/install craft-siteswitcher
+	ddev exec php app/craft plugin/install craft-vite
+	ddev exec php app/craft plugin/install web-toolkit-craftcms-plugin
 up:
 	if [ ! "$$(ddev describe | grep OK)" ]; then \
         ddev auth ssh; \

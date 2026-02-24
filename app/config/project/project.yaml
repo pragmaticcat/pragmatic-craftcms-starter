@@ -1,4 +1,4 @@
-dateModified: 1770048157
+dateModified: 1771924794
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Oriol Craft Starter'
@@ -55,20 +55,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  seomatic:
-    edition: standard
+  pragmatic-web-toolkit:
+    edition: free
     enabled: true
-    licenseKey: FEBUI6OSDOPDHC5IVIVKY4QD
-    schemaVersion: 3.0.13
+    schemaVersion: 1.0.0
   site-switcher:
     edition: standard
     enabled: true
     schemaVersion: 0.0.0
-  translations-admin:
-    edition: standard
-    enabled: true
-    licenseKey: GLSF4BE6PO2GC1XM1T7NHUU6
-    schemaVersion: 1.1.0
   vite:
     edition: standard
     enabled: true

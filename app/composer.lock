@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "087baec83d5d21141bfe4eca47c09e71",
+    "content-hash": "182e5c2b0e8ab7bf534664b14f77e4b9",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -46,16 +46,16 @@
         },
         {
             "name": "brick/math",
-            "version": "0.14.3",
+            "version": "0.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "6af96b11de3f7d99730c118c200418c48274edb4"
+                "reference": "63422359a44b7f06cae63c3b429b59e8efcc0629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/6af96b11de3f7d99730c118c200418c48274edb4",
-                "reference": "6af96b11de3f7d99730c118c200418c48274edb4",
+                "url": "https://api.github.com/repos/brick/math/zipball/63422359a44b7f06cae63c3b429b59e8efcc0629",
+                "reference": "63422359a44b7f06cae63c3b429b59e8efcc0629",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.14.3"
+                "source": "https://github.com/brick/math/tree/0.14.8"
             },
             "funding": [
                 {
@@ -102,7 +102,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-01T15:18:05+00:00"
+            "time": "2026-02-10T14:33:43+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -458,11 +458,11 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.11.0",
+            "version": "4.11.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/00289e6ce5f9a7c9595c5a51c2c726585aad5964",
-                "reference": "00289e6ce5f9a7c9595c5a51c2c726585aad5964",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/2e75b5050377aafb0aeef4b67230d26c28a07218",
+                "reference": "2e75b5050377aafb0aeef4b67230d26c28a07218",
                 "shasum": ""
             },
             "require": {
@@ -507,15 +507,15 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
-            "time": "2025-11-20T01:01:30+00:00"
+            "time": "2026-02-18T22:13:33+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "5.9.5",
+            "version": "5.9.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a0f43797e571059945fb754ac22fae845a4ad05f",
-                "reference": "a0f43797e571059945fb754ac22fae845a4ad05f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b38439ac3815a0a56c9f4cca34db5ddb1ce15dca",
+                "reference": "b38439ac3815a0a56c9f4cca34db5ddb1ce15dca",
                 "shasum": ""
             },
             "require": {
@@ -615,7 +615,7 @@
                 "docs": "https://craftcms.com/docs/5.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2026-01-31T18:05:38+00:00"
+            "time": "2026-02-18T21:29:03+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -821,48 +821,6 @@
             "time": "2025-09-16T12:23:56+00:00"
         },
         {
-            "name": "davechild/textstatistics",
-            "version": "1.0.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/e83d5f82726db80e662ae305fce3b3c41299b4f5",
-                "reference": "e83d5f82726db80e662ae305fce3b3c41299b4f5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.0"
-            },
-            "suggest": {
-                "ext-bcmath": "More accurate floating point calculations.",
-                "ext-mbstring": "Handle multi-byte text properly."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "DaveChild\\TextStatistics": "src"
-                }
-            },
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Child",
-                    "email": "dave@addedbytes.com",
-                    "homepage": "https://www.addedbytes.com/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP package to measure the readability of text according to various algorithms.",
-            "homepage": "https://github.com/DaveChild/Text-Statistics",
-            "time": "2018-08-21T08:17:10+00:00"
-        },
-        {
             "name": "doctrine/collections",
             "version": "2.6.0",
             "source": {
@@ -950,29 +908,29 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38"
+                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
-                "reference": "459c2f5dd3d6a4633d3b5f46ee2b1c40f57d3f38",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
+                "reference": "d4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "conflict": {
-                "phpunit/phpunit": "<=7.5 || >=13"
+                "phpunit/phpunit": "<=7.5 || >=14"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9 || ^12 || ^13",
-                "phpstan/phpstan": "1.4.10 || 2.1.11",
+                "doctrine/coding-standard": "^9 || ^12 || ^14",
+                "phpstan/phpstan": "1.4.10 || 2.1.30",
                 "phpstan/phpstan-phpunit": "^1.0 || ^2",
-                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12",
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.6 || ^10.5 || ^11.5 || ^12.4 || ^13.0",
                 "psr/log": "^1 || ^2 || ^3"
             },
             "suggest": {
@@ -992,9 +950,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/1.1.5"
+                "source": "https://github.com/doctrine/deprecations/tree/1.1.6"
             },
-            "time": "2025-04-07T20:06:18+00:00"
+            "time": "2026-02-07T07:09:04+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -2896,51 +2854,6 @@
             "time": "2026-01-02T08:56:05+00:00"
         },
         {
-            "name": "mutation/translate",
-            "version": "4.2.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/MutationDigitale/craft3-translate/zipball/9d04545636b76a4f5638f442c346e2be63a5c628",
-                "reference": "9d04545636b76a4f5638f442c346e2be63a5c628",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.6.0",
-                "php": "^8.2",
-                "phpoffice/phpspreadsheet": "^5.4.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Translations admin",
-                "handle": "translations-admin",
-                "hasCpSettings": true,
-                "hasCpSection": true,
-                "schemaVersion": "1.1.0",
-                "changelogUrl": "https://raw.githubusercontent.com/MutationDigitale/craft3-translate/master/CHANGELOG.md",
-                "class": "mutation\\translate\\Translate"
-            },
-            "autoload": {
-                "psr-4": {
-                    "mutation\\translate\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mutation Digitale",
-                    "homepage": "https://mutation.io/"
-                }
-            ],
-            "description": "Translate messages in the control panel",
-            "support": {
-                "docs": "https://github.com/MutationDigitale/craft3-translate/blob/master/README.md",
-                "issues": "https://github.com/MutationDigitale/craft3-translate/issues"
-            },
-            "time": "2026-01-27T15:12:32+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "2.73.0",
             "source": {
@@ -3155,129 +3068,6 @@
             "time": "2024-08-14T02:02:01+00:00"
         },
         {
-            "name": "nystudio107/craft-seomatic",
-            "version": "5.1.20",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c88261b04a6078c8caba9e57091833ab7dab2621",
-                "reference": "c88261b04a6078c8caba9e57091833ab7dab2621",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "davechild/textstatistics": "^1.0.3",
-                "nystudio107/craft-code-editor": "^1.0.14",
-                "nystudio107/craft-plugin-vite": "^5.0.0",
-                "nystudio107/craft-twig-sandbox": "^5.0.5",
-                "php": "^8.2",
-                "php-science/textrank": "^1.0.3",
-                "sunra/php-simple-html-dom-parser": "^1.5.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "class": "nystudio107\\seomatic\\Seomatic",
-                "handle": "seomatic",
-                "name": "SEOmatic"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\seomatic\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 5. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "facebook",
-                "json-ld",
-                "meta",
-                "seo",
-                "seomatic",
-                "sitemap",
-                "tags",
-                "twitter"
-            ],
-            "support": {
-                "docs": "https://nystudio107.com/docs/seomatic/",
-                "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic"
-            },
-            "time": "2026-01-20T22:33:38+00:00"
-        },
-        {
-            "name": "nystudio107/craft-twig-sandbox",
-            "version": "5.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-twig-sandbox.git",
-                "reference": "e4742fcf97ac01ab76d36118c357f0221c7a5ce0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twig-sandbox/zipball/e4742fcf97ac01ab76d36118c357f0221c7a5ce0",
-                "reference": "e4742fcf97ac01ab76d36118c357f0221c7a5ce0",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "twig/twig": "^3.0.0"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main",
-                "markhuot/craft-pest-core": "^2.0.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\crafttwigsandbox\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Allows you to easily create a sandboxed Twig environment where you can control what tags, filters, functions, and object methods/properties are allowed",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craftcms",
-                "sandbox",
-                "security",
-                "twig"
-            ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft-twig-sandbox/blob/v5/README.md",
-                "issues": "https://github.com/nystudio107/craft-twig-sandbox/issues",
-                "source": "https://github.com/nystudio107/craft-twig-sandbox"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-08-18T16:00:57+00:00"
-        },
-        {
             "name": "nystudio107/craft-vite",
             "version": "5.0.1",
             "dist": {
@@ -3433,52 +3223,6 @@
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
             "time": "2025-09-24T15:06:41+00:00"
-        },
-        {
-            "name": "php-science/textrank",
-            "version": "1.2.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/d63788f7f7305b8dd726a367a5653cdd5dac7fba",
-                "reference": "d63788f7f7305b8dd726a367a5653cdd5dac7fba",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-mbstring": "*",
-                "php": ">=7.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PhpScience\\TextRank\\": [
-                        "src/"
-                    ]
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Belicza",
-                    "email": "david@belicza.com"
-                }
-            ],
-            "description": "TextRank (automatic text summarization) for PHP.",
-            "keywords": [
-                "ai",
-                "artificial",
-                "automatic",
-                "intelligence",
-                "php",
-                "php8",
-                "science",
-                "strict",
-                "summarization",
-                "textrank"
-            ],
-            "time": "2023-12-29T15:21:30+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -4068,36 +3812,55 @@
             "time": "2021-08-15T12:26:51+00:00"
         },
         {
-            "name": "propis/pragmatic-seo",
+            "name": "pragmatic/web-toolkit-craftcms-plugin",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pragmaticcat/web-toolkit-craftcms-plugin.git",
+                "reference": "dec4d8ceb57e8c1255a8c5a8d79764ea8d678e95"
+            },
             "dist": {
-                "type": "path",
-                "url": "plugins/pragmatic-seo",
-                "reference": "071b9e9ab0789cccc7321381a95aa78e2a4d2a1c"
+                "type": "zip",
+                "url": "https://api.github.com/repos/pragmaticcat/web-toolkit-craftcms-plugin/zipball/dec4d8ceb57e8c1255a8c5a8d79764ea8d678e95",
+                "reference": "dec4d8ceb57e8c1255a8c5a8d79764ea8d678e95",
+                "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0.0"
+                "craftcms/cms": "^5.0",
+                "php": ">=8.2"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
-                "handle": "pragmatic-seo",
-                "name": "Pragmatic SEO",
-                "developer": "Propis",
-                "class": "propis\\pragmaticseo\\PragmaticSeo",
-                "hasCpSettings": true
+                "handle": "pragmatic-web-toolkit",
+                "class": "pragmatic\\webtoolkit\\PragmaticWebToolkit",
+                "name": "Pragmatic Web Toolkit",
+                "developer": "Pragmatic",
+                "developerUrl": "https://www.pragmatic.cat",
+                "hasSettings": true,
+                "hasCpSection": true
             },
             "autoload": {
                 "psr-4": {
-                    "propis\\pragmaticseo\\": "src/"
+                    "pragmatic\\webtoolkit\\": "src/"
                 }
             },
             "license": [
                 "MIT"
             ],
-            "description": "Pragmatic SEO plugin for Craft CMS 5",
-            "transport-options": {
-                "relative": true
-            }
+            "authors": [
+                {
+                    "name": "Oriol Noya",
+                    "email": "oriolnoya@pragmatic.cat"
+                }
+            ],
+            "description": "Unified Pragmatic Web Toolkit for Craft CMS",
+            "support": {
+                "email": "oriolnoya@pragmatic.cat",
+                "source": "https://github.com/pragmaticcat/web-toolkit-craftcms-plugin/tree/main",
+                "issues": "https://github.com/pragmaticcat/web-toolkit-craftcms-plugin/issues"
+            },
+            "time": "2026-02-23T17:11:43+00:00"
         },
         {
             "name": "psr/clock",
@@ -4726,48 +4489,6 @@
                 }
             ],
             "time": "2025-12-20T12:57:40+00:00"
-        },
-        {
-            "name": "sunra/php-simple-html-dom-parser",
-            "version": "v1.5.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/75b9b1cb64502d8f8c04dc11b5906b969af247c6",
-                "reference": "75b9b1cb64502d8f8c04dc11b5906b969af247c6",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sunra",
-                    "email": "sunra@yandex.ru",
-                    "homepage": "https://github.com/sunra"
-                },
-                {
-                    "name": "S.C. Chen",
-                    "homepage": "http://sourceforge.net/projects/simplehtmldom/"
-                }
-            ],
-            "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
-            "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
-            "keywords": [
-                "dom",
-                "html",
-                "parser"
-            ],
-            "time": "2016-11-22T22:57:47+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -7815,11 +7536,16 @@
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "4.9.2",
+            "version": "4.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/web-auth/webauthn-lib.git",
+                "reference": "129fbaccd22163429a39bf85e320fb9eddad035c"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/008b25171c27cf4813420d0de31cc059bcc71f1a",
-                "reference": "008b25171c27cf4813420d0de31cc059bcc71f1a",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/129fbaccd22163429a39bf85e320fb9eddad035c",
+                "reference": "129fbaccd22163429a39bf85e320fb9eddad035c",
                 "shasum": ""
             },
             "require": {
@@ -7862,6 +7588,7 @@
                     "Webauthn\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -7882,20 +7609,33 @@
                 "fido",
                 "webauthn"
             ],
-            "time": "2025-01-04T09:47:58+00:00"
+            "support": {
+                "source": "https://github.com/web-auth/webauthn-lib/tree/4.9.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Spomky",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/FlorentMorselli",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2026-02-05T12:48:16+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "2.1.2",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "ce6a2f100c404b2d32a1dd1270f9b59ad4f57649"
+                "reference": "79155f94852fa27e2f73b459f6503f5e87e2c188"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/ce6a2f100c404b2d32a1dd1270f9b59ad4f57649",
-                "reference": "ce6a2f100c404b2d32a1dd1270f9b59ad4f57649",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/79155f94852fa27e2f73b459f6503f5e87e2c188",
+                "reference": "79155f94852fa27e2f73b459f6503f5e87e2c188",
                 "shasum": ""
             },
             "require": {
@@ -7942,9 +7682,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/2.1.2"
+                "source": "https://github.com/webmozarts/assert/tree/2.1.5"
             },
-            "time": "2026-01-13T14:02:24+00:00"
+            "time": "2026-02-18T14:09:36+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -8568,16 +8308,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.19",
+            "version": "v0.12.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a4f766e5c5b6773d8399711019bb7d90875a50ee"
+                "reference": "19678eb6b952a03b8a1d96ecee9edba518bb0373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a4f766e5c5b6773d8399711019bb7d90875a50ee",
-                "reference": "a4f766e5c5b6773d8399711019bb7d90875a50ee",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/19678eb6b952a03b8a1d96ecee9edba518bb0373",
+                "reference": "19678eb6b952a03b8a1d96ecee9edba518bb0373",
                 "shasum": ""
             },
             "require": {
@@ -8641,9 +8381,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.19"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.20"
             },
-            "time": "2026-01-30T17:33:13+00:00"
+            "time": "2026-02-11T15:05:28+00:00"
         },
         {
             "name": "symfony/console",
@@ -8812,14 +8552,14 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "propis/pragmatic-seo": 20
+        "pragmatic/web-toolkit-craftcms-plugin": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.6.0"
 }

@@ -20,6 +20,17 @@ web_environment: []
 nodejs_version: "20"
 corepack_enable: false
 
+web_extra_exposed_ports:
+  - name: vite
+    container_port: 3000
+    http_port: 2999
+    https_port: 3000
+
+web_extra_daemons:
+  - name: "vite"
+    command: "npm run serve"
+    directory: /var/www/html
+
 # Key features of DDEV's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides
