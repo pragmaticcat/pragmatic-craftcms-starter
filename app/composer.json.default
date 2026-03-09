@@ -17,7 +17,7 @@
     "sort-packages": true
   },
   "require": {
-    "craftcms/ckeditor": "^4.2.0",
+    "craftcms/ckeditor": "^5.1.0",
     "craftcms/cms": "^5.9.5",
     "doublesecretagency/craft-siteswitcher": "^3.0.1",
     "nystudio107/craft-vite": "^5.0.1",

@@ -11,12 +11,12 @@ install: up build
 		$(filter-out $@,$(MAKECMDGOALS))
 	ddev exec php app/craft install \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php app/craft plugin/install ckeditor
-	ddev exec php app/craft plugin/install image-resizer
-	ddev exec php app/craft plugin/install knock-knock
-	ddev exec php app/craft plugin/install craft-siteswitcher
-	ddev exec php app/craft plugin/install craft-vite
-	ddev exec php app/craft plugin/install web-toolkit-craftcms-plugin
+	ddev exec php app/craft plugin/install ckeditor || true
+	ddev exec php app/craft plugin/install image-resizer || true
+	ddev exec php app/craft plugin/install knock-knock || true
+	ddev exec php app/craft plugin/install site-switcher || true
+	ddev exec php app/craft plugin/install vite || true
+	ddev exec php app/craft plugin/install pragmatic-web-toolkit || true
 up:
 	if [ ! "$$(ddev describe | grep OK)" ]; then \
         ddev auth ssh; \
