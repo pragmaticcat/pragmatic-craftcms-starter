@@ -7,8 +7,7 @@
     <meta name="referrer" content="origin-when-cross-origin" />
 
     {{ craft.pragmaticToolkit.faviconTags() }}
-
-    {{ pragmaticSEO.render(entry, 'seo')|raw }}
+    {{ craft.pragmaticToolkit.seoTags(entry, 'seo') }}
 
     {# vite our app; pass `false` so that CSS is not async loaded #}
     {{ craft.vite.script('src/js/app.js', false) }}
