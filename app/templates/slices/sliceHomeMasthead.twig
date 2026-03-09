@@ -1,0 +1,18 @@
+
+
+<section class="page-section {{ slice.type }} position-relative">
+
+    {#{% if slice.imatges.one() %}
+        <div class="top-image">
+            <div class="thumparallax">
+                <img class="object-fit-cover w-100" src="{{ slice.imatges.one().url }}"
+                     title="{{ slice.imatges.one().title }}"
+                     alt="{{ slice.imatges.one().alt }}">
+            </div>
+            <div class="overlay">
+
+            </div>
+        </div>
+    {% endif %}#}
+
+</section>

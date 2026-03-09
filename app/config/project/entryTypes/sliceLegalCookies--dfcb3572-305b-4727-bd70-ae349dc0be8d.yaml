@@ -1,0 +1,25 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  ffd953b7-1d39-40a9-a099-6c63f3b188ef:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        name: Contenido
+        uid: 6b9ed36e-231c-4a74-89df-a4bb07d2ec11
+        userCondition: null
+    thumbFieldKey: null
+handle: sliceLegalCookies
+hasTitleField: false
+icon: null
+name: 'Slice > Legal > Cookies'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

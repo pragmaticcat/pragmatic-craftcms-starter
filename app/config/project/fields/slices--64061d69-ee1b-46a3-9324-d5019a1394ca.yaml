@@ -24,6 +24,22 @@ settings:
         -
           - group
           - Contacto
+    -
+      __assoc__:
+        -
+          - uid
+          - af31ae6b-3be2-4454-9d8d-c8d481f19bd1 # Slice > Legal > Text
+        -
+          - group
+          - Legal
+    -
+      __assoc__:
+        -
+          - uid
+          - dfcb3572-305b-4727-bd70-ae349dc0be8d # Slice > Legal > Cookies
+        -
+          - group
+          - Legal
   includeTableView: false
   maxEntries: null
   minEntries: null

@@ -15,7 +15,7 @@ use craft\helpers\App;
 return [
     'aliases' => [
         '@web' => rtrim(APP::env('PRIMARY_SITE_URL'), '/'),
-        '@webroot' => dirname(__DIR__) . '/web',
+        '@webroot' => dirname(__DIR__),
     ],
     'allowUpdates' => (bool) App::env('ALLOW_UPDATES'),
     'allowAdminChanges' => (bool) App::env('ALLOW_ADMIN_CHANGES'),
@@ -42,5 +42,5 @@ return [
     'testToEmailAddress' => App::env('TEST_TO_EMAIL_ADDRESS') ?: null,
     'timezone' => 'UTC',
     'transformGifs' => false,
-    'useEmailAsUsername' => true,
+    'useEmailAsUsername' => App::env('USE_EMAIL_AS_USERNAME'),
 ];

@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  8f15511a-4573-4e11-9f70-5a8bb9552ffd:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-03-09T08:54:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a58e7ac6-eeb6-4b7c-a26a-2e1f8c44f478 # Texto rico
+            handle: text
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b98ed569-8949-41a6-9800-bc4514e30d34
+            userCondition: null
+            warning: null
+            width: 100
+        name: Contenido
+        uid: d92b88b0-c9f6-4fea-904c-08b71d7a0808
+        userCondition: null
+    thumbFieldKey: null
+handle: sliceLegalText
+hasTitleField: false
+icon: null
+name: 'Slice > Legal > Text'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,4 +1,4 @@
-dateModified: 1771927200
+dateModified: 1773046585
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Pragmatic Craft Starter'
@@ -21,7 +21,6 @@ meta:
     8ab29f18-2345-4d26-83ee-b63fb7be6fda: 'Texto simple multi' # Texto simple multi
     8df7a5a9-0c4f-4443-a4c5-c9c2e3691239: 'Slice > Contacto' # Slice > Contacto
     37dde611-88e0-4377-ba85-8ba5c7319eee: 'Slice > Home > Masthead' # Slice > Home > Masthead
-    38d0a421-6127-4344-aca0-1ff65c8b8594: Simple # Simple
     95bc1e22-93fa-49aa-999a-bfcff2fc1f3e: 'Texto simple' # Texto simple
     771cf3a5-13d3-4309-9f27-a4b6dfdc4fab: Imagen # Imagen
     918afb19-5701-4638-8acc-474aac54ca52: SEO # SEO
@@ -33,17 +32,19 @@ meta:
     72571255-ce29-40e0-a09a-06b190f79f54: Page # Page
     a58e7ac6-eeb6-4b7c-a26a-2e1f8c44f478: 'Texto rico' # Texto rico
     ab0dc730-c3fd-4174-b818-495eadb494b3: 'Fit 500' # Fit 500
+    af31ae6b-3be2-4454-9d8d-c8d481f19bd1: 'Slice > Legal > Text' # Slice > Legal > Text
     b5f0b813-586b-4599-b8ce-e8ef1b0eb355: Español # Español
     b5620131-314c-43f4-94f2-c02994402adf: Page # Page
     d539bfeb-a2ba-438e-b349-6819c97b3384: Pàgina # Pàgina
     de3b4f14-0161-4bc8-b49f-7e7c334472e3: 'Pragmatic Craft Starter' # Pragmatic Craft Starter
+    dfcb3572-305b-4727-bd70-ae349dc0be8d: 'Slice > Legal > Cookies' # Slice > Legal > Cookies
     e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
     fc14ea14-8531-40c0-a56d-15d19052fb34: 'Fit 1000' # Fit 1000
 plugins:
   ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 3.0.0.0
+    schemaVersion: 5.0.0.1
   image-resizer:
     edition: standard
     enabled: true
@@ -55,7 +56,7 @@ plugins:
   pragmatic-web-toolkit:
     edition: free
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 1.2.0
   site-switcher:
     edition: standard
     enabled: true
