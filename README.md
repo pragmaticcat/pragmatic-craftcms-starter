@@ -52,7 +52,6 @@ Last, clean up and set some default files for use:
 cp app/.env.example app/.env
 cp app/composer.json.default app/composer.json
 cp .gitignore.default .gitignore
-rm CHANGELOG.md && rm LICENSE.md
 ```
 
 ### Option 3: Manual Download
