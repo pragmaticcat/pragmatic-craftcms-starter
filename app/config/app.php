@@ -26,6 +26,9 @@ use craft\queue\Queue;
 
 return [
     '*' => [
+		'aliases' => [
+			'@root' => dirname(CRAFT_BASE_PATH),
+		],
 		'components' => [
 			'deprecator' => [
 				'throwExceptions' => (bool) APP::env('HARD_MODE'),
