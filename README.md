@@ -130,7 +130,6 @@ A Makefile has been included to provide a unified CLI for common development com
 ## Craft CMS Plugins
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)
-1. [Knock Knock](https://plugins.craftcms.com/knock-knock)
 1. [Pragmatic Web Toolkit](https://github.com/pragmaticcat/web-toolkit-craftcms-plugin)
 1. [Vite](https://plugins.craftcms.com/vite)
 1. [Image Resizer](https://plugins.craftcms.com/image-resizer)

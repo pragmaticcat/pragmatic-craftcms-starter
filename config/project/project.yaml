@@ -49,10 +49,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
-  knock-knock:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.1.1
   pragmatic-web-toolkit:
     edition: free
     enabled: true

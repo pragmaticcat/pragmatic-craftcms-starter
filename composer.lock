@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c205156f3c963feabedfe36731eabb02",
+    "content-hash": "4035b4560548b10fa23960cd12147493",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -7289,58 +7289,6 @@
             "time": "2025-07-18T14:04:35+00:00"
         },
         {
-            "name": "verbb/knock-knock",
-            "version": "3.0.5",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/knock-knock/zipball/68b0d7de0825d728ea009486b3a11d630250cc84",
-                "reference": "68b0d7de0825d728ea009486b3a11d630250cc84",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0",
-                "php": "^8.2",
-                "verbb/base": "^3.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Knock Knock",
-                "handle": "knock-knock",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/knock-knock/craft-5/CHANGELOG.md",
-                "class": "verbb\\knockknock\\KnockKnock"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\knockknock\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Password protect your public facing Craft website with a single password.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "knock-knock"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/knock-knock/issues?state=open",
-                "source": "https://github.com/verbb/knock-knock",
-                "docs": "https://github.com/verbb/knock-knock",
-                "rss": "https://github.com/verbb/knock-knock/commits/v2.atom"
-            },
-            "time": "2025-11-29T03:52:23+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.3",
             "source": {
@@ -8561,5 +8509,5 @@
     "platform-overrides": {
         "php": "8.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }
