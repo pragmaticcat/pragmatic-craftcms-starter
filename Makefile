@@ -5,18 +5,18 @@ build: up
 dev: build
 install: up build
 	ddev composer install
-	ddev exec php app/craft setup/app-id \
+	ddev exec php craft setup/app-id \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php app/craft setup/security-key \
+	ddev exec php craft setup/security-key \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php app/craft install \
+	ddev exec php craft install \
 		$(filter-out $@,$(MAKECMDGOALS))
-	ddev exec php app/craft plugin/install ckeditor || true
-	ddev exec php app/craft plugin/install image-resizer || true
-	ddev exec php app/craft plugin/install knock-knock || true
-	ddev exec php app/craft plugin/install site-switcher || true
-	ddev exec php app/craft plugin/install vite || true
-	ddev exec php app/craft plugin/install pragmatic-web-toolkit || true
+	ddev exec php craft plugin/install ckeditor || true
+	ddev exec php craft plugin/install image-resizer || true
+	ddev exec php craft plugin/install knock-knock || true
+	ddev exec php craft plugin/install site-switcher || true
+	ddev exec php craft plugin/install vite || true
+	ddev exec php craft plugin/install pragmatic-web-toolkit || true
 up:
 	if [ ! "$$(ddev describe | grep OK)" ]; then \
         ddev auth ssh; \

@@ -33,6 +33,17 @@ return [
 			'deprecator' => [
 				'throwExceptions' => (bool) APP::env('HARD_MODE'),
 			],
+			'i18n' => [
+				'translations' => [
+					'store-hours' => [
+						'class' => craft\i18n\PhpMessageSource::class,
+						'sourceLanguage' => 'en-US',
+						'basePath' => '@app/translations',
+						'forceTranslation' => false,
+						'allowOverrides' => true,
+					],
+				],
+			],
 			'queue' => [
 				'class' => Queue::class,
 				'ttr' => 15 * 60,

@@ -8,6 +8,12 @@ import $ from 'jquery';
 window.$ = window.jQuery = $;
 
 /**
+ * Bootstrap
+ */
+import * as bootstrap from 'bootstrap';
+window.bootstrap = bootstrap;
+
+/**
  * GSAP
  */
 import gsap from 'gsap';

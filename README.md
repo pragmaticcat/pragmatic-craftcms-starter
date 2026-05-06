@@ -49,8 +49,8 @@ rm -rf .git
 Last, clean up and set some default files for use:
 
 ```shell
-cp app/.env.example app/.env
-cp app/composer.json.default app/composer.json
+cp .env.example .env
+cp composer.json.default composer.json
 cp .gitignore.default .gitignore
 ```
 
@@ -60,8 +60,8 @@ Download a copy of the repo to your local machine and move to where you want to 
 
 ```shell
 cd PATH
-cp app/.env.example app/.env
-cp app/composer.json.default app/composer.json
+cp .env.example .env
+cp composer.json.default composer.json
 cp .gitignore.default .gitignore
 ```
 

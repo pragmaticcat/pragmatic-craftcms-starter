@@ -1,7 +1,7 @@
 name: pragmatic-craftcms-starter
 type: craftcms
-docroot: ''
-composer_root: './app'
+docroot: 'web'
+composer_root: '.'
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false

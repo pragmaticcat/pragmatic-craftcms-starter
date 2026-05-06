@@ -12,7 +12,7 @@ export default defineConfig(({command}) => ({
       transformMixedEsModules: true,
     },
     manifest: true,
-    outDir: path.resolve(__dirname, 'dist/'),
+    outDir: path.resolve(__dirname, 'web/dist/'),
     rollupOptions: {
       input: {
         app: path.resolve(__dirname, 'src/js/app.js'),
@@ -28,7 +28,7 @@ export default defineConfig(({command}) => ({
     }),
     ViteRestart({
       reload: [
-        'app/templates/**/*',
+        'templates/**/*',
       ],
     }),
   ],
