@@ -24,3 +24,9 @@
 
 @import "header";
 @import "footer";
+
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
