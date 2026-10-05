@@ -5,6 +5,7 @@ entryTypes:
     uid: b5620131-314c-43f4-94f2-c02994402adf # Page
 handle: page
 maxAuthors: 1
+minAuthors: 1
 name: Page
 previewTargets:
   -
