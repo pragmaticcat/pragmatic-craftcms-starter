@@ -127,6 +127,52 @@ A Makefile has been included to provide a unified CLI for common development com
 - `make dev` - Starts the DDEV project and builds all front-end assets.
 - `make build` - Builds all front-end assets.
 
+## Project backups
+
+Create a complete, portable backup of the current project with:
+
+```shell
+ddev backup-project
+```
+
+By default, backups are stored next to the project in a directory named after the
+DDEV project, for example:
+
+```text
+../mysite-backups/mysite-2026-10-05_12-30-00/
+├── backup-info.txt
+├── database.sql.gz
+└── project/
+```
+
+The backup contains the complete project directory—including `.env`, `.git`,
+uploaded assets, and Craft's `storage` directory—plus a compressed database dump.
+Because it can contain credentials and private uploads, store it securely and do
+not commit it to source control.
+
+To use a different parent directory, pass its path to the command:
+
+```shell
+ddev backup-project "/Volumes/Backups"
+```
+
+The command refuses destinations inside the project directory, verifies the
+database archive, and leaves a `.backup-incomplete` marker if it exits before
+finishing.
+
+To restore a backup, copy its `project` directory to the desired location, then
+run:
+
+```shell
+cd PATH_TO_RESTORED_PROJECT
+ddev config --project-name mysite-restored
+ddev start
+ddev import-db --file="PATH_TO_BACKUP/database.sql.gz"
+```
+
+Use a unique DDEV project name when the original project still exists on the same
+machine.
+
 ## Craft CMS Plugins
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)

@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+
+## Description: Create a complete, portable backup of the project files and database
+## Usage: backup-project [destination-parent]
+## Example: "ddev backup-project" or "ddev backup-project /Volumes/Backups"
+## ExecRaw: true
+## HostWorkingDir: true
+
+set -Eeuo pipefail
+
+project_root="${DDEV_APPROOT:-$(pwd -P)}"
+project_name="${DDEV_SITENAME:-$(basename "$project_root")}"
+timestamp="$(date '+%Y-%m-%d_%H-%M-%S')"
+destination_parent="${1:-$(dirname "$project_root")/${project_name}-backups}"
+
+mkdir -p "$destination_parent"
+destination_parent="$(cd "$destination_parent" && pwd -P)"
+project_root="$(cd "$project_root" && pwd -P)"
+
+case "$destination_parent/" in
+    "$project_root/"*)
+        echo "Error: the backup destination cannot be inside the project directory." >&2
+        exit 1
+        ;;
+esac
+
+backup_dir="$destination_parent/${project_name}-${timestamp}"
+
+if [[ -e "$backup_dir" ]]; then
+    echo "Error: backup directory already exists: $backup_dir" >&2
+    exit 1
+fi
+
+command -v rsync >/dev/null 2>&1 || {
+    echo "Error: rsync is required but was not found." >&2
+    exit 1
+}
+
+mkdir -p "$backup_dir/project"
+touch "$backup_dir/.backup-incomplete"
+
+echo "Creating database dump..."
+ddev export-db --file="$backup_dir/database.sql.gz"
+
+echo "Copying project files..."
+rsync -a --exclude='.DS_Store' "$project_root/" "$backup_dir/project/"
+
+echo "Verifying database dump..."
+gzip -t "$backup_dir/database.sql.gz"
+
+{
+    echo "Project: $project_name"
+    echo "Created: $(date '+%Y-%m-%dT%H:%M:%S%z')"
+    echo "Source: $project_root"
+    echo "Database: database.sql.gz"
+    if git -C "$project_root" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        echo "Git commit: $(git -C "$project_root" rev-parse HEAD)"
+        if [[ -n "$(git -C "$project_root" status --porcelain)" ]]; then
+            echo "Git working tree: modified"
+        else
+            echo "Git working tree: clean"
+        fi
+    fi
+} > "$backup_dir/backup-info.txt"
+
+rm -f "$backup_dir/.backup-incomplete"
+
+echo
+echo "Backup completed successfully:"
+echo "$backup_dir"
+du -sh "$backup_dir"
