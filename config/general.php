@@ -32,6 +32,7 @@ return [
     'enableTemplateCaching' => (bool) App::env('ENABLE_TEMPLATE_CACHING'),
     'imageDriver' => App::env('IMAGE_DRIVER'),
     'isSystemLive' => (bool) App::env('IS_SYSTEM_LIVE'),
+    'limitAutoSlugsToAscii' => true,
     'maxRevisions' => 10,
     'omitScriptNameInUrls' => true,
 	'preloadSingles' => true,
