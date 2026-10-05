@@ -12,6 +12,7 @@ install: up build
 	ddev exec php craft install \
 		$(filter-out $@,$(MAKECMDGOALS))
 	ddev exec php craft plugin/install ckeditor || true
+	ddev exec php craft plugin/install copy || true
 	ddev exec php craft plugin/install image-resizer || true
 	ddev exec php craft plugin/install site-switcher || true
 	ddev exec php craft plugin/install vite || true

@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+## Description: Start the project, optionally refresh the production DB, and launch it
+## Usage: boot
+## Example: "ddev boot"
+
+set -euo pipefail
+
+ddev start
+
+shopt -s nullglob
+stage_files=("${DDEV_APPROOT}/config/craft-copy"/fortrabbit.*.yaml)
+shopt -u nullglob
+
+if [[ ${#stage_files[@]} -eq 0 ]]; then
+    echo "Craft Copy is not configured; keeping the current local database."
+    ddev launch
+    exit 0
+fi
+
+if [[ ${#stage_files[@]} -gt 1 && -z "${DEFAULT_STAGE:-}" ]]; then
+    echo "Multiple Craft Copy stages found. Set DEFAULT_STAGE in .env before using ddev boot."
+    exit 1
+fi
+
+if [[ -n "${DEFAULT_STAGE:-}" ]]; then
+    stage="$DEFAULT_STAGE"
+else
+    stage="$(basename "${stage_files[0]}")"
+    stage="${stage#fortrabbit.}"
+    stage="${stage%.yaml}"
+fi
+
+if [[ ! -t 0 ]]; then
+    echo "No interactive terminal detected; keeping the current local database."
+    exit 0
+fi
+
+printf '\nDo you want to replace the LOCAL database with the latest production database? [y/N] '
+read -r answer
+
+case "$answer" in
+    y|Y|yes|YES|s|S|si|SI|sí|Sí)
+        ddev craft copy/db/down "$stage"
+        ;;
+    *)
+        echo "Keeping the current local database."
+        ;;
+esac
+
+ddev launch

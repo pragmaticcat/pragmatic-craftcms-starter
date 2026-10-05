@@ -1,0 +1,18 @@
+{
+  "src/js/app.js": {
+    "file": "assets/app-teo1564X.js",
+    "name": "app",
+    "src": "src/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/styles-GGZEljpz.css"
+    ],
+    "integrity": "sha384-RmfCDRtL/3lx7JR0SXYk3QpWXuz5M/3WnUApQfbG8q3Db83l8sh9CUiE7wY5pC9J"
+  },
+  "src/scss/app.scss": {
+    "file": "assets/styles-GGZEljpz.css",
+    "src": "src/scss/app.scss",
+    "isEntry": true,
+    "integrity": "sha384-He8oiOrU5FAuvtpbdXAoI+KdhJPBqbuZvwTVGbwGY+1jRtsI4SBZbMa0Ya2bzJ4N"
+  }
+}
