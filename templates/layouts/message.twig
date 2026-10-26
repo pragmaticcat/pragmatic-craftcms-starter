@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ currentSite.language ?? 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>{{ (title ?? 'Oops!'|t) }} · {{ siteName ?? 'Site' }}</title>
+    <style>
+        body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1.5rem; box-sizing: border-box; background: #f3f4f6; color: #1f2937; font: 1rem/1.5 system-ui, sans-serif; }
+        main { width: min(100%, 32rem); padding: 2rem; box-sizing: border-box; background: #fff; border-radius: .5rem; box-shadow: 0 .5rem 2rem rgb(0 0 0 / .08); }
+        h1 { margin: 0 0 .75rem; font-size: 1.5rem; }
+        p { margin: 0; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>{{ title ?? 'Oops!'|t }}</h1>
+        <p>{{ message ?? 'An error has occurred.'|t }}</p>
+    </main>
+</body>
+</html>
