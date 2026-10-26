@@ -43,5 +43,5 @@ return [
     'testToEmailAddress' => App::env('TEST_TO_EMAIL_ADDRESS') ?: null,
     'timezone' => 'UTC',
     'transformGifs' => false,
-    'useEmailAsUsername' => App::env('USE_EMAIL_AS_USERNAME'),
+    'useEmailAsUsername' => true,
 ];
