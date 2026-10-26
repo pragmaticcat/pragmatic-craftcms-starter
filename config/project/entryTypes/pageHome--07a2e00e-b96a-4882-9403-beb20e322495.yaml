@@ -37,27 +37,19 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-02-24T09:57:14+00:00'
-            dismissible: false
-            elementCondition: null
-            style: warning
-            tip: "Escoge qué pagina quieres que se muestre en la home.\r\nSi no escoges ninguna, la home se verá en blanco."
-            type: craft\fieldlayoutelements\Tip
-            uid: 4a95c852-42c9-4d08-9ffc-eb929e2f21e2
-            userCondition: null
-          -
-            dateAdded: '2026-02-24T09:57:14+00:00'
+            dateAdded: '2026-10-26T12:08:55+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: d539bfeb-a2ba-438e-b349-6819c97b3384 # Pàgina
+            fieldUid: 64061d69-ee1b-46a3-9324-d5019a1394ca # Slices
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1f72494b-4487-4e60-8261-258863a0f4ce
+            uid: 81d1f840-ad81-407c-8647-eb635f6c3c8d
             userCondition: null
             warning: null
             width: 100
@@ -76,6 +68,7 @@ fieldLayouts:
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
