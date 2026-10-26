@@ -1,0 +1,16 @@
+.slice-home-masthead {
+  &__title {
+    max-width: 14ch;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 1.05;
+  }
+
+  &__text {
+    max-width: 60ch;
+  }
+
+  &__media .media-cover {
+    position: absolute;
+    inset: 0;
+  }
+}

@@ -1,0 +1,21 @@
+{% set headingTag = headingTag|default('h2') %}
+{% set text = slice.text ?? null %}
+{% set cta = slice.cta ?? null %}
+
+<section class="page-section slice-contacto py-7">
+    <div class="container">
+        <div class="row align-items-center gy-4">
+            <div class="col-lg-8">
+                <{{ headingTag }} class="slice-contacto__title">{{ slice.title }}</{{ headingTag }}>
+                {% if text %}
+                    <div class="slice-contacto__text">{{ text|raw }}</div>
+                {% endif %}
+            </div>
+            {% if cta and cta.url %}
+                <div class="col-lg-4 text-lg-end">
+                    <a class="btn btn-dark" href="{{ cta.url }}"{% if cta.target %} target="{{ cta.target }}"{% endif %}{% if cta.target == '_blank' %} rel="noopener noreferrer"{% endif %}>{{ cta.label ?: cta.url }}</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

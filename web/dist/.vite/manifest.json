@@ -1,18 +1,18 @@
 {
   "src/js/app.js": {
-    "file": "assets/app-B6b6tHFZ.js",
+    "file": "assets/app-kzB_9pOI.js",
     "name": "app",
     "src": "src/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/styles-DOXYU4ph.css"
+      "assets/styles-8x2c2u7R.css"
     ],
-    "integrity": "sha384-i6QEWDz9XgGCZepjjZhZqGLT2CssI7e8+B4AIXV5yvW0ivjx+a/UXswyaNnlWILN"
+    "integrity": "sha384-D642bYwFDi/TOrLVNA7LdpJg8Du6hzexAvw9kqhyYZNbu6BaMAlQxJqDm+pBwCh5"
   },
   "src/scss/app.scss": {
-    "file": "assets/styles-DOXYU4ph.css",
+    "file": "assets/styles-8x2c2u7R.css",
     "src": "src/scss/app.scss",
     "isEntry": true,
-    "integrity": "sha384-LpCv1rSrmIyHriNwigtlAwhDSdSotlUK0+JKonY6HKWU4Iddr4dTGgng6uibSIFI"
+    "integrity": "sha384-lQZIcqXgwogjsgNQQ7lDvIrv7ZTvucwYqN+MuUyqLlCfsswIF7txeuyu5BLiC61l"
   }
 }

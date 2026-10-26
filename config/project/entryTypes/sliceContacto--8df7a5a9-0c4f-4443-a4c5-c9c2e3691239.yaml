@@ -36,6 +36,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            fieldUid: a58e7ac6-eeb6-4b7c-a26a-2e1f8c44f478 # Texto rico
+            handle: text
+            label: Text
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01921244-c369-4ba4-abbe-4b1509d8f9d7
+            width: 100
+          -
+            fieldUid: 5a61419b-ae2d-4376-af16-96592e9cf0a2 # Enlace i18n
+            handle: cta
+            label: Button
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+            uid: d83965bf-dd11-4959-a63f-b227886ccffd
+            width: 100
         name: Contenido
         uid: bc4939a5-ee60-467c-bafb-aa3c89559efd
         userCondition: null

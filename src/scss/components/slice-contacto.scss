@@ -1,0 +1,11 @@
+.slice-contacto {
+  background: var(--bs-tertiary-bg);
+
+  &__title {
+    max-width: 18ch;
+  }
+
+  &__text {
+    max-width: 65ch;
+  }
+}

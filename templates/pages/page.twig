@@ -7,13 +7,12 @@
 {% extends "/layouts/base" %}
 
 {% block pageId %}{{ pageId }}{% endblock %}
-{% block forceOpaque %}false{% endblock %}
 
 {% block body %}
 
     {% set pageSlices = entry.slices.all() %}
     {# Add handles here when a slice renders headingTag as its visible headline. #}
-    {% set headlineSliceHandles = [] %}
+    {% set headlineSliceHandles = ['sliceHomeMasthead', 'sliceContacto'] %}
     {{ heading.fallbackH1(entry.title, pageSlices, headlineSliceHandles) }}
     {% for slice in pageSlices %}
         {% include "slices/" ~ slice.type with {

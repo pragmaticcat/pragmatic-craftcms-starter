@@ -13,7 +13,7 @@
   {% set page = entry.pagina.one() %}
   {% set pageSlices = page ? page.slices.all() : [] %}
   {# Add handles here when a slice renders headingTag as its visible headline. #}
-  {% set headlineSliceHandles = [] %}
+  {% set headlineSliceHandles = ['sliceHomeMasthead', 'sliceContacto'] %}
   {{ heading.fallbackH1(entry.title, pageSlices, headlineSliceHandles) }}
   {% for slice in pageSlices %}
     {% include "slices/" ~ slice.type with {

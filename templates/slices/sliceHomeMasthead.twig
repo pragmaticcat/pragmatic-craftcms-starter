@@ -1,18 +1,35 @@
+{% import '/includes/macros/media.twig' as media %}
+{% set headingTag = headingTag|default('h2') %}
+{% set asset = slice.media is defined and slice.media ? slice.media.one() : null %}
+{% set text = slice.text ?? null %}
+{% set cta = slice.cta ?? null %}
 
-
-<section class="page-section {{ slice.type }} position-relative">
-
-    {#{% if slice.imatges.one() %}
-        <div class="top-image">
-            <div class="thumparallax">
-                <img class="object-fit-cover w-100" src="{{ slice.imatges.one().url }}"
-                     title="{{ slice.imatges.one().title }}"
-                     alt="{{ slice.imatges.one().alt }}">
+<section class="page-section slice-home-masthead py-7">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <div class="{{ asset ? 'col-lg-6' : 'col-lg-8' }}">
+                <{{ headingTag }} class="slice-home-masthead__title">{{ slice.title }}</{{ headingTag }}>
+                {% if text %}
+                    <div class="slice-home-masthead__text">{{ text|raw }}</div>
+                {% endif %}
+                {% if cta and cta.url %}
+                    <a class="btn btn-dark mt-3" href="{{ cta.url }}"{% if cta.target %} target="{{ cta.target }}"{% endif %}{% if cta.target == '_blank' %} rel="noopener noreferrer"{% endif %}>{{ cta.label ?: cta.url }}</a>
+                {% endif %}
             </div>
-            <div class="overlay">
-
-            </div>
+            {% if asset %}
+                <div class="col-lg-6">
+                    {{ media.figure(asset, {
+                        class: 'slice-home-masthead__media',
+                        aspectRatio: '4 / 3',
+                        cover: {
+                            transform: 'fit1500',
+                            sizes: '(min-width: 992px) 50vw, 100vw',
+                            loading: 'eager',
+                            fetchpriority: 'high'
+                        }
+                    }) }}
+                </div>
+            {% endif %}
         </div>
-    {% endif %}#}
-
+    </div>
 </section>
