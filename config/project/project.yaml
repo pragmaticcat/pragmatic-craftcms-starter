@@ -1,16 +1,23 @@
-dateModified: 1793018222
+dateModified: 1793019081
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Pragmatic Craft Starter'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  archivo:
+    hasUrls: true
+    name: Archivo
+    settings:
+      path: '@webroot/assets/uploads/archivo'
+    type: craft\fs\Local
+    url: $PRIMARY_SITE_URL/assets/uploads/archivo
   imagen:
     hasUrls: true
     name: Imagen
     settings:
       path: '@webroot/assets/uploads/imagen'
     type: craft\fs\Local
-    url: '@web/assets/uploads/imagen'
+    url: $PRIMARY_SITE_URL/assets/uploads/imagen
 meta:
   __names__:
     0a06bc5f-2e04-4a7a-8360-350090bfbfa6: Enlace # Enlace
@@ -21,6 +28,7 @@ meta:
     8a822748-a289-4786-911f-523fca1389cc: Alineament # Alineament
     8ab29f18-2345-4d26-83ee-b63fb7be6fda: 'Texto simple multi' # Texto simple multi
     8df7a5a9-0c4f-4443-a4c5-c9c2e3691239: 'Slice > Contacto' # Slice > Contacto
+    8e9d5264-208d-40fe-b834-e6cfe9f2cf1d: Archivo # Archivo
     17d847b2-bb37-42c6-8d82-a22439d78d81: 'Posició Imatge' # Posició Imatge
     37dde611-88e0-4377-ba85-8ba5c7319eee: 'Slice > Home > Masthead' # Slice > Home > Masthead
     43b5fca3-df90-499d-861d-bff1fcbde8a7: 'Slice > Actualitat' # Slice > Actualitat
@@ -58,6 +66,7 @@ meta:
     de3b4f14-0161-4bc8-b49f-7e7c334472e3: $SYSTEM_NAME # $SYSTEM_NAME
     dfcb3572-305b-4727-bd70-ae349dc0be8d: 'Slice > Legal > Cookies' # Slice > Legal > Cookies
     e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
+    e8498f57-bfb0-46e6-929d-df2fc665faca: 'Fit 2500' # Fit 2500
     eb7d0924-ae7c-4a24-a681-23f9d01b2882: 'Slice > Article > Video' # Slice > Article > Video
     f4821693-a961-4a3a-80b2-1c4a40e5883f: 'Opcions Bloc' # Opcions Bloc
     fc14ea14-8531-40c0-a56d-15d19052fb34: 'Fit 1000' # Fit 1000

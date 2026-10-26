@@ -59,6 +59,23 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            dateAdded: '2026-10-26T12:51:20+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8ab29f18-2345-4d26-83ee-b63fb7be6fda # Texto simple multi
+            handle: pieDeFoto
+            instructions: null
+            label: 'Pie de foto'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23d302e7-b5b5-494c-b03a-a024e5f8f643
+            userCondition: null
+            warning: null
+            width: 50
         name: Contenido
         uid: db97b217-e014-42c9-8e4f-8b1d95e3fe43
         userCondition: null
