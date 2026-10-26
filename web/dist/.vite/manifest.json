@@ -1,18 +1,18 @@
 {
   "src/js/app.js": {
-    "file": "assets/app-teo1564X.js",
+    "file": "assets/app-B6b6tHFZ.js",
     "name": "app",
     "src": "src/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/styles-GGZEljpz.css"
+      "assets/styles-DOXYU4ph.css"
     ],
-    "integrity": "sha384-RmfCDRtL/3lx7JR0SXYk3QpWXuz5M/3WnUApQfbG8q3Db83l8sh9CUiE7wY5pC9J"
+    "integrity": "sha384-i6QEWDz9XgGCZepjjZhZqGLT2CssI7e8+B4AIXV5yvW0ivjx+a/UXswyaNnlWILN"
   },
   "src/scss/app.scss": {
-    "file": "assets/styles-GGZEljpz.css",
+    "file": "assets/styles-DOXYU4ph.css",
     "src": "src/scss/app.scss",
     "isEntry": true,
-    "integrity": "sha384-He8oiOrU5FAuvtpbdXAoI+KdhJPBqbuZvwTVGbwGY+1jRtsI4SBZbMa0Ya2bzJ4N"
+    "integrity": "sha384-LpCv1rSrmIyHriNwigtlAwhDSdSotlUK0+JKonY6HKWU4Iddr4dTGgng6uibSIFI"
   }
 }

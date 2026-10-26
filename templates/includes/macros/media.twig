@@ -1,0 +1,66 @@
+{#
+  Minimal image/video rendering for Craft assets. This macro deliberately does
+  not assume project-specific asset fields, video codecs or CSS frameworks.
+  Pass a poster or fallback video explicitly when a project needs them.
+#}
+{% macro cover(asset, opts = {}) %}
+    {% set opts = {
+        class: '',
+        transform: 'fit2000',
+        sizes: '100vw',
+        loading: 'lazy',
+        fetchpriority: null,
+        alt: null,
+        poster: null,
+        fallbackVideo: null,
+        background: false
+    }|merge(opts) %}
+    {% set widths = {fit500: 500, fit1000: 1000, fit1500: 1500, fit2000: 2000} %}
+    {% set transform = opts.transform in widths|keys ? opts.transform : 'fit2000' %}
+
+    {% if asset and asset.kind == 'image' %}
+        {% set handles = widths|filter(width => width <= widths[transform])|keys %}
+        {% set srcset = handles|map(handle => asset.getUrl(handle) ~ ' ' ~ asset.getWidth(handle) ~ 'w')|join(', ') %}
+        {% set loading = opts.fetchpriority == 'high' and opts.loading == 'lazy' ? 'eager' : opts.loading %}
+        <img class="media-cover {{ opts.class }}"
+             src="{{ asset.getUrl(transform) }}"
+             srcset="{{ srcset }}"
+             sizes="{{ opts.sizes }}"
+             width="{{ asset.getWidth(transform) }}"
+             height="{{ asset.getHeight(transform) }}"
+             alt="{{ opts.alt is not null ? opts.alt : asset.alt ?? '' }}"
+             loading="{{ loading }}"
+             decoding="async"{% if opts.fetchpriority %}
+             fetchpriority="{{ opts.fetchpriority }}"{% endif %}>
+    {% elseif asset and asset.kind == 'video' %}
+        {% set posterUrl = opts.poster ? (opts.poster is instance of('craft\elements\Asset') ? opts.poster.getUrl() : opts.poster) : null %}
+        <video class="media-cover {{ opts.class }}{{ opts.background and posterUrl ? ' media-cover-video--has-poster' }}"
+               preload="metadata"{% if posterUrl %} poster="{{ posterUrl }}"{% endif %}
+               {% if opts.background %}autoplay muted loop playsinline aria-hidden="true"{% else %}controls{% endif %}>
+            <source src="{{ asset.getUrl() }}" type="{{ asset.mimeType }}">
+            {% if opts.fallbackVideo %}
+                <source src="{{ opts.fallbackVideo.getUrl() }}" type="{{ opts.fallbackVideo.mimeType }}">
+            {% endif %}
+        </video>
+        {% if opts.background and posterUrl %}
+            <img class="media-cover media-cover-poster {{ opts.class }}" src="{{ posterUrl }}" alt="" aria-hidden="true" loading="lazy">
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+
+{% macro figure(asset, opts = {}) %}
+    {% set opts = {
+        class: '',
+        aspectRatio: null,
+        caption: null,
+        cover: {}
+    }|merge(opts) %}
+    {% if asset %}
+        <figure class="media-figure {{ opts.class }}">
+            <div class="media-figure__frame"{% if opts.aspectRatio %} style="aspect-ratio: {{ opts.aspectRatio }}"{% endif %}>
+                {{ _self.cover(asset, opts.cover) }}
+            </div>
+            {% if opts.caption %}<figcaption>{{ opts.caption }}</figcaption>{% endif %}
+        </figure>
+    {% endif %}
+{% endmacro %}

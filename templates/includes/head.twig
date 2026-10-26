@@ -1,17 +1,20 @@
 <head>
     <style>[x-cloak] { display: none !important; }</style>
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
 
     {{ craft.pragmaticToolkit.faviconTags() }}
-    {{ craft.pragmaticToolkit.seoTags(entry, 'seo') }}
+    {% set seoElement = pagina ?? element ?? null %}
+    {% if seoElement %}
+        {{ craft.pragmaticToolkit.seoTags(seoElement, 'seo') }}
+    {% else %}
+        <title>{{ (pageTitle ?? null) ? pageTitle ~ ' | ' ~ siteName : siteName }}</title>
+        <meta name="robots" content="noindex">
+    {% endif %}
 
-    {# vite our app; pass `false` so that CSS is not async loaded #}
+    {% include '/includes/fonts' %}
     {{ craft.vite.script('src/js/app.js', false) }}
-
     <link rel="stylesheet" href="{{ craft.vite.asset('src/scss/app.scss') }}">
-
 </head>

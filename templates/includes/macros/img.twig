@@ -39,7 +39,7 @@
  # #}
 {% macro responsive(image, opts = {}) %}
 
-  {% from "_macros/svg.twig" import transparentDataUri %}
+  {% from "/includes/macros/svg.twig" import transparentDataUri %}
 
   {# merge opts with defaults #}
   {% set opts = {

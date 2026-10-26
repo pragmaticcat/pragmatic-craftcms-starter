@@ -1,4 +1,12 @@
-{% extends "_layouts/message.twig" %}
+{% extends "/layouts/base" %}
 
-{% set title = "Page Not Found"|t %}
-{% set message = "Sorry, we could not find the page you were looking for."|t %}
+{% set pageTitle = 'Page Not Found'|t %}
+{% block pageId %}not-found{% endblock %}
+
+{% block body %}
+    <section class="container py-5">
+        <h1>{{ pageTitle }}</h1>
+        <p>{{ 'Sorry, we could not find the page you were looking for.'|t }}</p>
+        <a href="{{ siteUrl() }}">{{ 'Back to home'|t }}</a>
+    </section>
+{% endblock %}

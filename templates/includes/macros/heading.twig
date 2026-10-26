@@ -1,0 +1,15 @@
+{#
+  Keep one H1 on pages assembled from slices. Add a slice handle to
+  headlineHandles only when its template renders the supplied headingTag.
+  Pass pageHasH1=true when the page template already renders an H1.
+#}
+{% macro tag(slice, slices, headlineHandles = [], pageHasH1 = false) %}
+    {%- set first = pageHasH1 ? null : slices|filter(item => item.type.handle in headlineHandles)|first -%}
+    {{- first and first.id == slice.id ? 'h1' : 'h2' -}}
+{% endmacro %}
+
+{% macro fallbackH1(title, slices, headlineHandles = [], pageHasH1 = false) %}
+    {%- if not pageHasH1 and not (slices|filter(item => item.type.handle in headlineHandles)|length) -%}
+        <h1 class="visually-hidden">{{ title }}</h1>
+    {%- endif -%}
+{% endmacro %}

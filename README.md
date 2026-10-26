@@ -2,6 +2,8 @@
 
 A Craft CMS starter project using DDEV for local hosting and Vite for front-end bundling and HMR.
 
+For template architecture, media, headings and 404 handling, see [AGENTS.md](AGENTS.md).
+
 ## Notable Features:
 
 - [DDEV](https://ddev.readthedocs.io/) for local development
