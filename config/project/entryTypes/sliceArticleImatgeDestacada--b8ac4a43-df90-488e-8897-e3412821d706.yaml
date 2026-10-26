@@ -1,0 +1,43 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  3cc7cbb1-16e8-4379-8c18-993b70f64faa:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-08-18T06:48:01+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2721776a-b5ff-4590-990e-6b8a127497e8 # Imágenes
+            handle: imatge
+            instructions: null
+            label: Imatge
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 621e7eac-0d00-4115-8043-b46ecf38fb57
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 15ef578a-1490-40ca-9312-fb3b0626dffb
+        userCondition: null
+    thumbFieldKey: null
+handle: sliceArticleImatgeDestacada
+hasTitleField: false
+icon: null
+name: 'Slice > Article > Imatge destacada'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

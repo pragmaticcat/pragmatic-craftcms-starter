@@ -1,0 +1,61 @@
+columnSuffix: null
+handle: slicesArticle
+instructions: null
+name: 'Slices Article'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - b8ac4a43-df90-488e-8897-e3412821d706 # Slice > Article > Imatge destacada
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ab2b3162-b2ec-4e15-9464-7366b531c350 # Slice > Article > Cita
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - ae7bfd39-917b-4421-b996-67daa65c4078 # Slice > Article > Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - b3cedb4c-1f4b-479c-85f5-fa8eeddd690a # Slice > Article > Imatges
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - eb7d0924-ae7c-4a24-a681-23f9d01b2882 # Slice > Article > Video
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

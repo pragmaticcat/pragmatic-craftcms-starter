@@ -175,6 +175,17 @@ ddev import-db --file="PATH_TO_BACKUP/database.sql.gz"
 Use a unique DDEV project name when the original project still exists on the same
 machine.
 
+## Blog / Actualitat
+
+The Actualitat landing page is a regular `page` entry with a `sliceActualitat`
+block. Articles use the `pageArticle` type and a five-block `slices` field
+(`slicesArticle` configuration); categories have their own archive. The related
+templates are
+`templates/pages/article.twig`, `templates/pages/categoria.twig`,
+`templates/slices/sliceActualitat.twig`, `templates/slices/sliceArticle*.twig`,
+and `templates/includes/articlesActualitat.twig`. The presentation uses basic
+Bootstrap classes.
+
 ## Craft CMS Plugins
 
 1. [CKEditor](https://plugins.craftcms.com/ckeditor)

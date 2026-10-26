@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: categoriaArticle
+instructions: null
+name: 'Categoria Article'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: false
+  source: 'group:b06e044c-fa56-4615-a1bd-0e4042120948' # Categoria Article
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

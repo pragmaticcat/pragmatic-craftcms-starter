@@ -1,0 +1,123 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  4846d008-5772-4bb1-b894-0cb0baf9e0bb:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-09-14T09:24:58+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8ab29f18-2345-4d26-83ee-b63fb7be6fda # Texto simple multi
+            handle: cita
+            instructions: null
+            label: Cita
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7bea1434-b741-4841-9012-f1d01d419f34
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-08-18T06:48:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a58e7ac6-eeb6-4b7c-a26a-2e1f8c44f478 # Texto rico
+            handle: autora
+            instructions: null
+            label: Autor/a
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4f61d1d-f853-4ea5-9810-830b2c2ea93b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-15T10:04:38+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 405c5c29-a233-4863-ac58-f91605b5e371
+            userCondition: null
+          -
+            dateAdded: '2026-09-14T09:24:24+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2721776a-b5ff-4590-990e-6b8a127497e8 # Imágenes
+            handle: imatge
+            instructions: null
+            label: Imatge
+            oldFieldUid: 2721776a-b5ff-4590-990e-6b8a127497e8 # Imágenes
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 234e4ced-fd56-41fd-938f-60940c269af0
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-09-15T10:04:38+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 17d847b2-bb37-42c6-8d82-a22439d78d81 # Posició Imatge
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b13f329-151f-4db8-bc78-70437f8da40e
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-09-14T09:23:21+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a72a31ea-026f-46fc-bc0c-9bf3e452c896
+            userCondition: null
+          -
+            dateAdded: '2026-09-14T12:11:55+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f4821693-a961-4a3a-80b2-1c4a40e5883f # Opcions Bloc
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bab0931f-72ea-4ec4-b4f8-45180badadc9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b277382f-438a-4565-8b11-e3dc56c5c15b
+        userCondition: null
+    thumbFieldKey: null
+handle: sliceArticleCita
+hasTitleField: false
+icon: null
+name: 'Slice > Article > Cita'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

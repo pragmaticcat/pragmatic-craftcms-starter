@@ -1,0 +1,43 @@
+{% extends '/layouts/base' %}
+{% import '/includes/macros/media.twig' as media %}
+{% block pageId %}article{% endblock %}
+{% block body %}
+    {% set actualitatPage = craft.entries.section('page').slug('actualitat').site(currentSite).one() %}
+    {% set image = entry.imatgeDestacada.one() %}
+    {% set categories = entry.categories.all() %}
+    <article class="container py-5">
+        <div class="row justify-content-center"><div class="col-lg-9 col-xl-8">
+            {% if actualitatPage %}<a class="d-inline-block mb-4" href="{{ actualitatPage.url }}">← {{ actualitatPage.title }}</a>{% endif %}
+            <header class="mb-4">
+                <h1>{{ entry.title }}</h1>
+                <time class="text-body-secondary" datetime="{{ entry.postDate|date('Y-m-d') }}">{{ entry.postDate|date('long') }}</time>
+                {% if categories|length %}<div class="d-flex flex-wrap gap-2 mt-3">{% for category in categories %}<a class="badge text-bg-light text-decoration-none" href="{{ category.url }}">{{ category.title }}</a>{% endfor %}</div>{% endif %}
+                {% if entry.mostraExtracte and entry.extracte %}<p class="lead mt-4">{{ entry.extracte|nl2br }}</p>{% endif %}
+            </header>
+            {% if image %}<div class="ratio ratio-16x9 overflow-hidden mb-5">{{ media.cover(image, {sizes: '(min-width: 1200px) 840px, (min-width: 992px) 720px, 100vw', fetchpriority: 'high'}) }}</div>{% endif %}
+        </div></div>
+        {% set articleSlices = entry.slices.all() %}
+        {% for slice in articleSlices %}
+            {% set previous = loop.index0 > 0 ? articleSlices[loop.index0 - 1] : null %}
+            {% set next = loop.index0 < articleSlices|length - 1 ? articleSlices[loop.index0 + 1] : null %}
+            {% include 'slices/' ~ slice.type with {
+                slice: slice,
+                index: loop.index0,
+                blocPreviDestacat: previous ? (previous.opcionsBloc.destacaBloc ?? false) : false,
+                blocSeguentDestacat: next ? (next.opcionsBloc.destacaBloc ?? false) : false,
+                headingTag: 'h2'
+            } %}
+        {% endfor %}
+    </article>
+    {% if categories|length %}
+        {% set related = craft.entries.section('article').site(currentSite).relatedTo(categories).id(['not', entry.id]).limit(3).all() %}
+        {% if related|length %}
+            <aside class="container py-5" aria-label="{{ 'Articles relacionats'|t }}">
+                <h2 class="mb-4">{{ 'Articles relacionats'|t }}</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    {% for article in related %}<div class="col"><div class="card h-100"><div class="card-body"><h3 class="h5"><a href="{{ article.url }}">{{ article.title }}</a></h3>{% if article.extracte %}<p>{{ article.extracte|nl2br }}</p>{% endif %}</div></div></div>{% endfor %}
+                </div>
+            </aside>
+        {% endif %}
+    {% endif %}
+{% endblock %}

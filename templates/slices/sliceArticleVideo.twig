@@ -1,0 +1,7 @@
+{% set videoUrl = slice.video.value ?? '' %}
+{% set videoId = videoUrl|replace('/^.*(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/)|youtu\.be\/)([\w-]{11}).*$/', '$1') %}
+{% if videoId|length == 11 %}
+    <section id="{{ slice.slug }}" class="py-5"><div class="container"><div class="row justify-content-center"><div class="col-lg-9"><div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube-nocookie.com/embed/{{ videoId }}" title="{{ slice.title }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></div></div></div></section>
+{% endif %}

@@ -1,4 +1,4 @@
-dateModified: 1793016575
+dateModified: 1793018222
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Pragmatic Craft Starter'
@@ -18,27 +18,48 @@ meta:
     2ae9ffa4-f063-4622-9ce9-242dd916d99b: 'Fit 2000' # Fit 2000
     5a61419b-ae2d-4376-af16-96592e9cf0a2: 'Enlace i18n' # Enlace i18n
     07a2e00e-b96a-4882-9403-beb20e322495: 'Page > Home' # Page > Home
+    8a822748-a289-4786-911f-523fca1389cc: Alineament # Alineament
     8ab29f18-2345-4d26-83ee-b63fb7be6fda: 'Texto simple multi' # Texto simple multi
     8df7a5a9-0c4f-4443-a4c5-c9c2e3691239: 'Slice > Contacto' # Slice > Contacto
+    17d847b2-bb37-42c6-8d82-a22439d78d81: 'Posició Imatge' # Posició Imatge
     37dde611-88e0-4377-ba85-8ba5c7319eee: 'Slice > Home > Masthead' # Slice > Home > Masthead
+    43b5fca3-df90-499d-861d-bff1fcbde8a7: 'Slice > Actualitat' # Slice > Actualitat
+    51cf460c-3bd5-43aa-afec-51e9fc974d61: Lightswitch # Lightswitch
     95bc1e22-93fa-49aa-999a-bfcff2fc1f3e: 'Texto simple' # Texto simple
+    536cc9c3-f874-4135-a95c-c6400cb5f89a: Article # Article
     771cf3a5-13d3-4309-9f27-a4b6dfdc4fab: Imagen # Imagen
     918afb19-5701-4638-8acc-474aac54ca52: SEO # SEO
     8429b0f2-af63-4dc3-9b47-04ae49c3849d: 'Imágenes i18n' # Imágenes i18n
+    8549f439-5dfa-4bff-8c78-b4af5b18846f: Articles # Articles
     64061d69-ee1b-46a3-9324-d5019a1394ca: Slices # Slices
+    91408add-45fb-47e9-8ca1-5acbc5b4838f: 'Número columnes Text' # Número columnes Text
     91913eed-3eac-4d98-8363-37d4a108cabb: Home # Home
     2721776a-b5ff-4590-990e-6b8a127497e8: Imágenes # Imágenes
+    17207444-01d5-487a-8691-ec79940dfb62: 'Posició Text' # Posició Text
     39235805-5257-4042-a937-b1bc04f882e7: 'Fit 1500' # Fit 1500
+    58685534-c428-4a50-a351-a190f8639ece: 'Ample Text' # Ample Text
     72571255-ce29-40e0-a09a-06b190f79f54: Page # Page
     a58e7ac6-eeb6-4b7c-a26a-2e1f8c44f478: 'Texto rico' # Texto rico
+    a61e9557-5f0d-4454-8e8a-9efe5ce8f922: 'Opcions Text' # Opcions Text
+    aab18749-86ad-4ac4-8bff-df528b87fbc8: 'Slice > Home > Actualitat' # Slice > Home > Actualitat
     ab0dc730-c3fd-4174-b818-495eadb494b3: 'Fit 500' # Fit 500
+    ab2b3162-b2ec-4e15-9464-7366b531c350: 'Slice > Article > Cita' # Slice > Article > Cita
+    ae7bfd39-917b-4421-b996-67daa65c4078: 'Slice > Article > Text' # Slice > Article > Text
     af31ae6b-3be2-4454-9d8d-c8d481f19bd1: 'Slice > Legal > Text' # Slice > Legal > Text
+    b06e044c-fa56-4615-a1bd-0e4042120948: 'Categoria Article' # Categoria Article
+    b3cedb4c-1f4b-479c-85f5-fa8eeddd690a: 'Slice > Article > Imatges' # Slice > Article > Imatges
     b5f0b813-586b-4599-b8ce-e8ef1b0eb355: Español # Español
+    b8ac4a43-df90-488e-8897-e3412821d706: 'Slice > Article > Imatge destacada' # Slice > Article > Imatge destacada
     b5620131-314c-43f4-94f2-c02994402adf: Page # Page
+    bec8a622-9022-42aa-b367-de448155246b: 'Page > Article' # Page > Article
+    cea5cca4-f2a3-4954-8c1a-1246219358d3: 'Slices Article' # Slices Article
+    d25baeef-d9f0-4703-b23d-59abed17d360: 'Categoria Article' # Categoria Article
     d539bfeb-a2ba-438e-b349-6819c97b3384: Pàgina # Pàgina
     de3b4f14-0161-4bc8-b49f-7e7c334472e3: $SYSTEM_NAME # $SYSTEM_NAME
     dfcb3572-305b-4727-bd70-ae349dc0be8d: 'Slice > Legal > Cookies' # Slice > Legal > Cookies
     e1e105d7-b880-401b-bb44-8f6c87634b37: English # English
+    eb7d0924-ae7c-4a24-a681-23f9d01b2882: 'Slice > Article > Video' # Slice > Article > Video
+    f4821693-a961-4a3a-80b2-1c4a40e5883f: 'Opcions Bloc' # Opcions Bloc
     fc14ea14-8531-40c0-a56d-15d19052fb34: 'Fit 1000' # Fit 1000
 plugins:
   ckeditor:

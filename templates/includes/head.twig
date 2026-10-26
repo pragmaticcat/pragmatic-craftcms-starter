@@ -7,10 +7,11 @@
 
     {{ craft.pragmaticToolkit.faviconTags() }}
     {% set seoElement = pagina ?? element ?? null %}
+    {% set brandName = craft.app.systemName ?? siteName %}
     {% if seoElement %}
         {{ craft.pragmaticToolkit.seoTags(seoElement, 'seo') }}
     {% else %}
-        <title>{{ (pageTitle ?? null) ? pageTitle ~ ' | ' ~ siteName : siteName }}</title>
+        <title>{{ (pageTitle ?? null) ? pageTitle ~ ' | ' ~ brandName : brandName }}</title>
         <meta name="robots" content="noindex">
     {% endif %}
 

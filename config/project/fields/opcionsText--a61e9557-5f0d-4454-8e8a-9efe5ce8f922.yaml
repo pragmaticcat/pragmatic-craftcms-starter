@@ -1,0 +1,70 @@
+columnSuffix: null
+handle: opcionsText
+instructions: null
+name: 'Opcions Text'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - d0556c7a-d021-4ce7-9a5d-d81382092364
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - 7c0b3920-08f8-4220-ac39-92d4d1e89a89
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 50
+                            9:
+                              - dateAdded
+                              - '2026-09-14T11:16:40+00:00'
+                            10:
+                              - uid
+                              - b03146ff-7887-443c-b020-8766616c6799
+                            13:
+                              - fieldUid
+                              - 91408add-45fb-47e9-8ca1-5acbc5b4838f # Número columnes Text
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 50
+                            9:
+                              - dateAdded
+                              - '2026-09-14T11:16:40+00:00'
+                            10:
+                              - uid
+                              - e01f4983-d299-474a-bc15-2596b09fa92e
+                            13:
+                              - fieldUid
+                              - 58685534-c428-4a50-a351-a190f8639ece # Ample Text
+            4:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

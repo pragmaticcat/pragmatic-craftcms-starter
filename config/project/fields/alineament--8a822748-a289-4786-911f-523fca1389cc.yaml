@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: alineament
+instructions: null
+name: Alineament
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Esquerra
+        -
+          - value
+          - esquerra
+        -
+          - icon
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Centre
+        -
+          - value
+          - centre
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Dreta
+        -
+          - value
+          - dreta
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

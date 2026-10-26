@@ -1,0 +1,25 @@
+{% import '/includes/macros/media.twig' as media %}
+{% set actualitatPage = craft.entries.section('page').slug('actualitat').site(currentSite).one() %}
+{% set articles = craft.entries.section('article').site(currentSite).orderBy('postDate desc').limit(3).all() %}
+<section class="page-section py-5" id="{{ slice.slug }}">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+            <{{ headingTag ?? 'h2' }} class="mb-0">{{ slice.title }}</{{ headingTag ?? 'h2' }}>
+            {% if actualitatPage %}<a href="{{ actualitatPage.url }}">{{ 'Veure tots els articles'|t }}</a>{% endif %}
+        </div>
+        {% if slice.texto %}<p class="lead">{{ slice.texto|nl2br }}</p>{% endif %}
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for article in articles %}
+                {% set image = article.imatgeDestacada.one() %}
+                <div class="col"><article class="card h-100">
+                    {% if image %}<a class="ratio ratio-16x9 overflow-hidden" href="{{ article.url }}">{{ media.cover(image, {transform: 'fit1000', sizes: '(min-width: 768px) 33vw, 100vw'}) }}</a>{% endif %}
+                    <div class="card-body">
+                        <time class="small text-body-secondary" datetime="{{ article.postDate|date('Y-m-d') }}">{{ article.postDate|date('long') }}</time>
+                        <h3 class="h5 mt-2"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                        {% if article.extracte %}<p>{{ article.extracte|nl2br }}</p>{% endif %}
+                    </div>
+                </article></div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,68 @@
+columnSuffix: null
+handle: posicioImatge
+instructions: null
+name: 'Posició Imatge'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Dreta
+        -
+          - value
+          - dreta
+        -
+          - icon
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Esquerra
+        -
+          - value
+          - esquerra
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sobre
+        -
+          - value
+          - sobre
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sota
+        -
+          - value
+          - sota
+        -
+          - icon
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

@@ -40,6 +40,22 @@ settings:
         -
           - group
           - Legal
+    -
+      __assoc__:
+        -
+          - uid
+          - 43b5fca3-df90-499d-861d-bff1fcbde8a7 # Slice > Actualitat
+        -
+          - group
+          - Pages
+    -
+      __assoc__:
+        -
+          - uid
+          - aab18749-86ad-4ac4-8bff-df528b87fbc8 # Slice > Home > Actualitat
+        -
+          - group
+          - Home
   includeTableView: false
   maxEntries: null
   minEntries: null

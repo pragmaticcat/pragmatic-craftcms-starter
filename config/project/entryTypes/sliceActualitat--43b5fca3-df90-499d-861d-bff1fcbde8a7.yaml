@@ -1,0 +1,122 @@
+allowLineBreaksInTitles: true
+color: null
+description: null
+fieldLayouts:
+  459cdbd1-eea4-4329-a714-d47e3e7fcdfa:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-07-31T09:00:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c0c2b57c-124b-4dd2-b8e3-e0e6996ecd89
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-07-31T09:02:26+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8ab29f18-2345-4d26-83ee-b63fb7be6fda # Texto simple multi
+            handle: texto
+            instructions: null
+            label: Texto
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cc93c04-4fd8-44bf-a4b8-6b5dd93b349b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-09T09:58:51+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d25baeef-d9f0-4703-b23d-59abed17d360 # Categoria Article
+            handle: categories
+            instructions: null
+            label: Categories
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f19b203-9867-4b91-8280-8db775f26f98
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-08-18T09:09:47+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8549f439-5dfa-4bff-8c78-b4af5b18846f # Articles
+            handle: articlesDestacats
+            instructions: null
+            label: 'Articles destacats'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e88eae34-301c-4681-aea2-f97ff767ed00
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-09T12:52:03+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 51cf460c-3bd5-43aa-afec-51e9fc974d61 # Lightswitch
+            handle: exclouDestacats
+            instructions: null
+            label: 'Exclou destacats'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 498a458f-cff6-4d8b-b4af-8ea7c545a2be
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: ab3843ca-c9a1-4241-b0a4-3ca0ef57dade
+        userCondition: null
+    thumbFieldKey: null
+handle: sliceActualitat
+hasTitleField: true
+icon: null
+name: 'Slice > Actualitat'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: language
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: language
+uiLabelFormat: '{title}'

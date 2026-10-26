@@ -1,0 +1,15 @@
+{% import '/includes/macros/media.twig' as media %}
+{% set images = slice.imatges.limit(2).all() %}
+{% set options = slice.opcionsBloc %}
+{% set alignment = options.alineament ?? 'esquerra' %}
+{% set narrow = slice.ampleImatges == 'reduit' %}
+<section id="{{ slice.slug }}" class="py-5{{ options.destacaBloc ?? false ? ' bg-light' }}">
+    <div class="container">
+        <div class="row g-4 align-items-start {{ slice.posicioText == 'esquerra' ? 'flex-lg-row-reverse' : '' }} {{ alignment == 'centre' ? 'justify-content-center' : (alignment == 'dreta' ? 'justify-content-end' : '') }}">
+            <div class="{{ slice.text ? (narrow ? 'col-lg-6' : 'col-lg-8') : (narrow ? 'col-lg-8' : 'col-12') }}">
+                <div class="row g-3">{% for image in images %}<div class="{{ images|length > 1 ? 'col-md-6' : 'col-12' }}">{{ media.figure(image, {cover: {transform: 'fit1500', sizes: '(min-width: 992px) 40vw, 100vw'}}) }}</div>{% endfor %}</div>
+            </div>
+            {% if slice.text %}<div class="{{ narrow ? 'col-lg-6' : 'col-lg-4' }}">{{ slice.text|raw }}</div>{% endif %}
+        </div>
+    </div>
+</section>

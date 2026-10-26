@@ -5,7 +5,8 @@
 Use DDEV for PHP, Composer, Craft and npm commands. The project uses Craft CMS 5,
 PHP 8.3, Node 20 and Vite. Run `ddev start`, `ddev composer install`,
 `ddev npm install`, `ddev npm run serve` or `ddev npm run build` as needed.
-Run `ddev craft up` after changing project config or migrations.
+Use `ddev exec php craft` for Craft CLI commands in this checkout.
+Run `ddev exec php craft up` after changing project config or migrations.
 
 ## Structure
 
@@ -49,3 +50,14 @@ URLs in `config/redirects.php`; do not add a catch-all route that returns 200.
 Check `git diff`, run a Vite build for front-end changes, and verify the affected
 Craft templates through DDEV. Keep client-specific content and credentials out
 of the starter.
+
+## Blog / Actualitat
+
+The Actualitat landing page is an entry in the `page` channel (slug `actualitat`)
+containing one `sliceActualitat` Matrix block. The optional `sliceHomeActualitat`
+block shows recent posts elsewhere. Article entries use the `pageArticle` entry
+type, with featured image, categories, excerpt, `mostraExtracte`, the `slices`
+field (using the `slicesArticle` Matrix configuration), and SEO. The article Matrix has five block types: text, quote, images, featured
+image and video. `templates/includes/articlesActualitat.twig` supplies the
+featured items, category filter, grid and pagination shared by the landing
+page and category archives. Keep Bootstrap styling in `src/scss/components/`.

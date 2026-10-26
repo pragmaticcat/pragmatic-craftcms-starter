@@ -1,0 +1,11 @@
+{% extends '/layouts/base' %}
+{% block pageId %}categoria-article{% endblock %}
+{% block body %}
+    {% set actualitatPage = craft.entries.section('page').slug('actualitat').site(currentSite).one() %}
+    {% set slice = actualitatPage ? actualitatPage.slices.type('sliceActualitat').one() : null %}
+    <section class="container py-5">
+        {% if actualitatPage %}<a class="d-inline-block mb-3" href="{{ actualitatPage.url }}">← {{ actualitatPage.title }}</a>{% endif %}
+        <h1 class="mb-5">{{ category.title }}</h1>
+        {% include '/includes/articlesActualitat.twig' with {slice: slice, category: category} only %}
+    </section>
+{% endblock %}

@@ -1,0 +1,71 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  1fb0872b-87b2-40d8-b9f4-52fb74fd160a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-09-28T11:07:44+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 45d1a00a-0017-4489-8802-ad00d06c1d0e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-09-28T11:09:44+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 0a06bc5f-2e04-4a7a-8360-350090bfbfa6 # Enlace
+            handle: video
+            instructions: null
+            label: Video
+            oldFieldUid: 0a06bc5f-2e04-4a7a-8360-350090bfbfa6 # Enlace
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20f8346c-42ea-4f98-8859-a2a539f84de5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3ef47924-bee3-487a-86b9-35486e4a727f
+        userCondition: null
+    thumbFieldKey: null
+handle: sliceArticleVideo
+hasTitleField: true
+icon: null
+name: 'Slice > Article > Video'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

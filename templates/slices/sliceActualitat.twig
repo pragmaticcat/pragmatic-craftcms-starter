@@ -1,0 +1,9 @@
+<section class="page-section py-5" id="{{ slice.slug }}">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-5"><{{ headingTag ?? 'h2' }}>{{ slice.title|nl2br }}</{{ headingTag ?? 'h2' }}></div>
+            {% if slice.texto %}<div class="col-lg-7 lead">{{ slice.texto|nl2br }}</div>{% endif %}
+        </div>
+        {% include '/includes/articlesActualitat.twig' with {slice: slice} only %}
+    </div>
+</section>

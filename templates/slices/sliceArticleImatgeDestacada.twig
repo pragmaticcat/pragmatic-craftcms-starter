@@ -1,0 +1,5 @@
+{% import '/includes/macros/media.twig' as media %}
+{% set image = slice.imatge.one() %}
+{% if image %}
+    <section id="{{ slice.slug }}" class="py-4"><div class="ratio ratio-16x9 overflow-hidden">{{ media.cover(image, {sizes: '100vw'}) }}</div></section>
+{% endif %}

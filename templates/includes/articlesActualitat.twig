@@ -1,0 +1,74 @@
+{# Shared listing for the Actualitat page and category archives. #}
+{% import '/includes/macros/media.twig' as media %}
+{% set category = category ?? null %}
+{% set slice = slice ?? null %}
+{% set filterCategories = slice ? slice.categories.all() : [] %}
+{% set actualitatPage = slice ? slice.owner : craft.entries.section('page').slug('actualitat').site(currentSite).one() %}
+
+{% if filterCategories|length %}
+    <nav class="d-flex flex-wrap gap-2 mb-4" aria-label="{{ 'Filtrar per categoria'|t }}">
+        <a class="btn btn-sm {{ category ? 'btn-outline-secondary' : 'btn-dark' }}" href="{{ actualitatPage ? actualitatPage.url : siteUrl('actualitat') }}">{{ 'Tots'|t }}</a>
+        {% for item in filterCategories %}
+            <a class="btn btn-sm {{ category and item.id == category.id ? 'btn-dark' : 'btn-outline-secondary' }}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endfor %}
+    </nav>
+{% endif %}
+
+{% set featured = slice and not category ? slice.articlesDestacats.all() : [] %}
+{% if featured|length and craft.app.request.pageNum == 1 %}
+    <div class="row g-4 mb-5">
+        {% for article in featured %}
+            {% set image = article.imatgeDestacada.one() %}
+            <div class="col-12 col-lg-6">
+                <article class="card h-100">
+                    {% if image %}<a class="ratio ratio-16x9 overflow-hidden" href="{{ article.url }}">{{ media.cover(image, {transform: 'fit1500', sizes: '(min-width: 992px) 50vw, 100vw'}) }}</a>{% endif %}
+                    <div class="card-body">
+                        <time class="small text-body-secondary" datetime="{{ article.postDate|date('Y-m-d') }}">{{ article.postDate|date('long') }}</time>
+                        <h3 class="h4 mt-2"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                        {% if article.extracte %}<p>{{ article.extracte|nl2br }}</p>{% endif %}
+                    </div>
+                </article>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
+
+{% set articlesQuery = craft.entries.section('article').site(currentSite).orderBy('postDate desc') %}
+{% if category %}{% set articlesQuery = articlesQuery.relatedTo(category) %}{% endif %}
+{% if slice and slice.exclouDestacats and featured|length %}
+    {% set articlesQuery = articlesQuery.id(['not']|merge(featured|map(item => item.id))) %}
+{% endif %}
+{% paginate articlesQuery.limit(12) as pageInfo, articles %}
+
+{% if articles|length %}
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for article in articles %}
+            {% set image = article.imatgeDestacada.one() %}
+            <div class="col">
+                <article class="card h-100">
+                    {% if image %}<a class="ratio ratio-16x9 overflow-hidden" href="{{ article.url }}">{{ media.cover(image, {transform: 'fit1000', sizes: '(min-width: 992px) 33vw, (min-width: 768px) 50vw, 100vw'}) }}</a>{% endif %}
+                    <div class="card-body d-flex flex-column">
+                        <time class="small text-body-secondary mb-2" datetime="{{ article.postDate|date('Y-m-d') }}">{{ article.postDate|date('long') }}</time>
+                        <h3 class="h5"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                        {% if article.extracte %}<p>{{ article.extracte|nl2br }}</p>{% endif %}
+                        <a class="mt-auto" href="{{ article.url }}">{{ 'Llegir més'|t }}</a>
+                    </div>
+                </article>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>{{ 'Encara no hi ha articles.'|t }}</p>
+{% endif %}
+
+{% if pageInfo.totalPages > 1 %}
+    <nav class="mt-5" aria-label="{{ 'Paginació'|t }}">
+        <ul class="pagination justify-content-center">
+            {% if pageInfo.prevUrl %}<li class="page-item"><a class="page-link" href="{{ pageInfo.prevUrl }}" rel="prev">{{ 'Anterior'|t }}</a></li>{% endif %}
+            {% for page, url in pageInfo.getDynamicRangeUrls(5) %}
+                <li class="page-item{{ page == pageInfo.currentPage ? ' active' }}"><a class="page-link" href="{{ url }}"{% if page == pageInfo.currentPage %} aria-current="page"{% endif %}>{{ page }}</a></li>
+            {% endfor %}
+            {% if pageInfo.nextUrl %}<li class="page-item"><a class="page-link" href="{{ pageInfo.nextUrl }}" rel="next">{{ 'Següent'|t }}</a></li>{% endif %}
+        </ul>
+    </nav>
+{% endif %}

@@ -1,0 +1,12 @@
+{% import '/includes/macros/media.twig' as media %}
+{% set image = slice.imatge.one() %}
+{% set options = slice.opcionsBloc %}
+{% set position = slice.posicioImatge ?? 'dreta' %}
+<section id="{{ slice.slug }}" class="py-5{{ options.destacaBloc ?? false ? ' bg-light' }}">
+    <div class="container">
+        <div class="row g-4 align-items-center {{ position == 'dreta' ? 'flex-lg-row-reverse' : '' }} {{ (options.alineament ?? 'esquerra') == 'centre' ? 'justify-content-center' : '' }}">
+            {% if image %}<div class="{{ position in ['sobre', 'sota'] ? 'col-12' : 'col-lg-4' }} {{ position == 'sota' ? 'order-last' : '' }}">{{ media.figure(image, {cover: {transform: 'fit1000', sizes: '(min-width: 992px) 33vw, 100vw'}}) }}</div>{% endif %}
+            <div class="{{ image and position in ['dreta', 'esquerra'] ? 'col-lg-8' : 'col-12' }}"><figure class="mb-0"><blockquote class="blockquote"><p>{{ slice.cita|nl2br }}</p></blockquote>{% if slice.autora %}<figcaption class="blockquote-footer mt-2">{{ slice.autora|striptags }}</figcaption>{% endif %}</figure></div>
+        </div>
+    </div>
+</section>

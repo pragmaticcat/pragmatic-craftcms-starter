@@ -1,0 +1,168 @@
+allowLineBreaksInTitles: true
+color: null
+description: null
+fieldLayouts:
+  3bea7aea-4a9b-440f-a105-79fa861e3b90:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-07-31T08:53:44+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 41257c95-9968-4566-b97a-9d4d201a6cca
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-07-31T08:55:32+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2721776a-b5ff-4590-990e-6b8a127497e8 # Imágenes
+            handle: imatgeDestacada
+            instructions: null
+            label: 'Imatge destacada'
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28a1b763-b9b1-4861-8f52-b4073c02d1a1
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-09-09T09:40:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: d25baeef-d9f0-4703-b23d-59abed17d360 # Categoria Article
+            handle: categories
+            instructions: null
+            label: Categories
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef461914-0f0e-4d0d-b178-05d6aaece079
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-09-14T07:53:56+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 96d51140-86e7-4fc8-9a3f-dfe0424a7494
+            userCondition: null
+          -
+            dateAdded: '2026-07-31T08:55:32+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8ab29f18-2345-4d26-83ee-b63fb7be6fda # Texto simple multi
+            handle: extracte
+            instructions: null
+            label: Extracte
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1aca7f85-ee77-402f-ba21-5176d4c665ef
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-09-14T07:53:09+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 51cf460c-3bd5-43aa-afec-51e9fc974d61 # Lightswitch
+            handle: mostraExtracte
+            instructions: null
+            label: 'Mostra extracte'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f569be21-e3fc-4e81-80ff-ece65a2fb56b
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-08-18T06:50:31+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cea5cca4-f2a3-4954-8c1a-1246219358d3 # Slices Article
+            handle: slices
+            instructions: null
+            label: Slices
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24197f94-c6ab-4e45-a737-37d0ceae8786
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0ba55160-b233-40b9-a3d9-a1df6162b4e4
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-09-18T11:17:48+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 918afb19-5701-4638-8acc-474aac54ca52 # SEO
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42cceaf2-605c-4d98-bb92-ee1e073325d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: c2a4fc9c-94dd-455d-b70d-14ffb8d4a48f
+        userCondition: null
+    thumbFieldKey: null
+handle: pageArticle
+hasTitleField: true
+icon: null
+name: 'Page > Article'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: bec8a622-9022-42aa-b367-de448155246b # Page > Article
+handle: article
+maxAuthors: 1
+minAuthors: 1
+name: Article
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  1a5b9fdc-1c32-4e52-a8c6-324ce30e35e1: # Català
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/article.twig
+    uriFormat: 'actualitat/{slug}'
+  b5f0b813-586b-4599-b8ce-e8ef1b0eb355: # Español
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/article.twig
+    uriFormat: 'article/{slug}'
+  e1e105d7-b880-401b-bb44-8f6c87634b37: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/article.twig
+    uriFormat: 'article/{slug}'
+type: channel

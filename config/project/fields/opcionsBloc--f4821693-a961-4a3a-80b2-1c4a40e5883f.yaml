@@ -1,0 +1,85 @@
+columnSuffix: null
+handle: opcionsBloc
+instructions: null
+name: 'Opcions Bloc'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 71a85f8c-cd58-446e-a1ef-a4001791fe50
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 52e31c12-8325-4254-9d3f-0d836692e050
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - destacaBloc
+                            2:
+                              - oldFieldUid
+                              - 51cf460c-3bd5-43aa-afec-51e9fc974d61 # Lightswitch
+                            3:
+                              - label
+                              - 'Destaca bloc?'
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 25
+                            9:
+                              - dateAdded
+                              - '2026-09-14T11:16:04+00:00'
+                            10:
+                              - uid
+                              - ef484f2f-5c66-445f-8d76-4133d60428dc
+                            13:
+                              - fieldUid
+                              - 51cf460c-3bd5-43aa-afec-51e9fc974d61 # Lightswitch
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - oldFieldUid
+                              - 8a822748-a289-4786-911f-523fca1389cc # Alineament
+                            7:
+                              - required
+                              - false
+                            8:
+                              - width
+                              - 25
+                            9:
+                              - dateAdded
+                              - '2026-09-14T11:16:04+00:00'
+                            10:
+                              - uid
+                              - 099d7e4d-a0c4-4b86-9480-e2b28a1f24fd
+                            13:
+                              - fieldUid
+                              - 8a822748-a289-4786-911f-523fca1389cc # Alineament
+            4:
+              - cardThumbAlignment
+              - end
+  viewMode: pane
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock
