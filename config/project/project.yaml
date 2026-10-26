@@ -61,10 +61,6 @@ plugins:
     edition: free
     enabled: true
     schemaVersion: 1.6.0
-  site-switcher:
-    edition: standard
-    enabled: true
-    schemaVersion: 0.0.0
   vite:
     edition: standard
     enabled: true

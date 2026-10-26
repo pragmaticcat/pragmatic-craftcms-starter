@@ -181,7 +181,13 @@ machine.
 1. [Pragmatic Web Toolkit](https://github.com/pragmaticcat/web-toolkit-craftcms-plugin)
 1. [Vite](https://plugins.craftcms.com/vite)
 1. [Image Resizer](https://plugins.craftcms.com/image-resizer)
-1. [Site Switcher](https://plugins.craftcms.com/site-switcher)
+
+Pragmatic Web Toolkit provides the language switcher. Use
+`siteSwitcher(siteHandle, entry ?? null)` for a specific site, or
+`craft.pragmaticToolkit.languageSwitcherLinks(entry ?? null)` to list the
+available sites. The starter enables its Language Redirect module in a content
+migration; automatic redirects and the floating button remain configurable in
+the plugin control panel.
 
 ## Javascript Libraries
 

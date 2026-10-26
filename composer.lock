@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24ad4accde64d0de84382129eded4ca4",
+    "content-hash": "63699540a7371c7e9515c38185720139",
     "packages": [
         {
             "name": "albertofem/rsync-lib",
@@ -1655,60 +1655,6 @@
                 }
             ],
             "time": "2026-10-01T06:59:29+00:00"
-        },
-        {
-            "name": "doublesecretagency/craft-siteswitcher",
-            "version": "3.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doublesecretagency/craft-siteswitcher/zipball/c0e5328fcddd530fbdbd7c91abac9f150aa7c98f",
-                "reference": "c0e5328fcddd530fbdbd7c91abac9f150aa7c98f",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^5.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Site Switcher",
-                "handle": "site-switcher",
-                "schemaVersion": "0.0.0",
-                "changelogUrl": "https://raw.githubusercontent.com/doublesecretagency/craft-siteswitcher/v3/CHANGELOG.md",
-                "class": "doublesecretagency\\siteswitcher\\SiteSwitcher"
-            },
-            "autoload": {
-                "psr-4": {
-                    "doublesecretagency\\siteswitcher\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Double Secret Agency",
-                    "homepage": "https://www.doublesecretagency.com/plugins"
-                }
-            ],
-            "description": "Easily switch between sites on any page of your website.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "language-switcher",
-                "languages",
-                "locales",
-                "multi-site",
-                "multisite",
-                "sites",
-                "switcher"
-            ],
-            "support": {
-                "docs": "https://github.com/doublesecretagency/craft-siteswitcher/blob/v3/README.md",
-                "issues": "https://github.com/doublesecretagency/craft-siteswitcher/issues"
-            },
-            "time": "2026-01-10T23:28:18+00:00"
         },
         {
             "name": "egulias/email-validator",

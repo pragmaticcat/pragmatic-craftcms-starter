@@ -20,7 +20,6 @@
   "require": {
     "craftcms/ckeditor": "^5.1.0",
     "craftcms/cms": "^5.9.5",
-    "doublesecretagency/craft-siteswitcher": "^3.0.1",
     "fortrabbit/craft-auto-migrate": "^2.5",
     "fortrabbit/craft-copy": "^3.0.1",
     "nystudio107/craft-vite": "^5.0.1",
