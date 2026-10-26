@@ -1,4 +1,4 @@
-dateModified: 1791189580
+dateModified: 1792230015
 email:
   fromEmail: oriolnoya@gmail.com
   fromName: 'Pragmatic Craft Starter'
@@ -60,7 +60,7 @@ plugins:
   pragmatic-web-toolkit:
     edition: free
     enabled: true
-    schemaVersion: 1.5.0
+    schemaVersion: 1.6.0
   site-switcher:
     edition: standard
     enabled: true
